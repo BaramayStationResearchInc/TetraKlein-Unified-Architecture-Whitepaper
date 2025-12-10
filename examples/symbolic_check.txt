@@ -1,0 +1,2 @@
+Symbolic limit = 9999999172.59636*sigma
+Spectral gap N=15 = 2/15

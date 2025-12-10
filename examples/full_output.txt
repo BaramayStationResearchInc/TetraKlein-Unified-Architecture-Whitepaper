@@ -1,0 +1,8 @@
+✅ Coq compilation complete – all lemmas QED
+Symbolic limit = 9999999172.59636*sigma
+Spectral gap N=15 = 2/15
+Launching GPU evolution (1,000,000 pts × 1000 steps)
+✅ GPU complete in 3.38s
+
+✅ Run complete — Coq QED ✔ GPU CUDA 12.4 ✔
+📦 Archived → /content/TetraKlein_Proof_Artifacts.zip (proof, GPU logs, metadata)

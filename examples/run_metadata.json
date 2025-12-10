@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-12-03 19:04:39",
+  "gpu": "Tesla T4",
+  "cuda": "Cuda compilation tools, release 12.5, V12.5.82",
+  "python": "Python 3.12.12",
+  "coq": "The Coq Proof Assistant, version 8.15.0",
+  "numpy": "1.26.4",
+  "description": "Formal proof + GPU numerical verification of TetraKlein Reality Model (CUDA 12.4)."
+}
