@@ -12,6 +12,7 @@
 >
 > This document contains the full technical specification, AIR tables, VM design,
 > and XR–DTC–Ledger pipeline integration.
+>
 > MacDonald, M. T. (2025). TetraKlein: A Unified Architecture (v1.0).
 > Baramay Station Research Inc. Zenodo.
 > https://doi.org/10.5281/zenodo.17882467
