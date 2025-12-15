@@ -83,7 +83,10 @@ tetraklein-local/
 │   └─ LATEST/
 │       ├─ console.log
 │       └─ env_snapshot.json
-│
+│       └─ deep_audit
+│           ├─ deep_audit.log
+│           └─ spectral_gap.png
+│           └─ console.log
 └─ README.md
 ```
 
