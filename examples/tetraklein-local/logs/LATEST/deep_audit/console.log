@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/c/tetraklein-local/tests/tklocal_deep_audit.py", line 250, in <module>
+    print(f"[ OK ] Deep Audit Passed Log snapshot written to {LOG_DIR / 'deep_audit'}")
+                                                              ^^^^^^^
+NameError: name 'LOG_DIR' is not defined

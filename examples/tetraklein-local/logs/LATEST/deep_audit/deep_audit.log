@@ -1,0 +1,35 @@
+2025-12-14 23:04:23,142 | ========================================================================
+2025-12-14 23:04:23,142 | TETRAKLEIN DEEP FEASIBILITY AUDIT — NEW RUN
+2025-12-14 23:04:23,142 | ========================================================================
+2025-12-14 23:04:23,142 | === TetraKlein Deep Feasibility Audit START ===
+2025-12-14 23:04:23,143 | === Goal 1: Contractivity & Convergence ===
+2025-12-14 23:04:23,164 | Limit(error_t) = Piecewise((sigma/(1 - rho), rho < 1), (oo, True))
+2025-12-14 23:04:23,164 | goal1_contractivity: time=0.021s, cpu=0.020s, mem=1.91MB
+2025-12-14 23:04:23,165 | === Goal 2: Hypercube Spectral Gap ===
+2025-12-14 23:04:23,165 | N=1, spectral_gap=2, normalized_gap=2.0000
+2025-12-14 23:04:23,165 | N=2, spectral_gap=2, normalized_gap=1.0000
+2025-12-14 23:04:23,165 | N=3, spectral_gap=2, normalized_gap=0.6667
+2025-12-14 23:04:23,165 | N=4, spectral_gap=2, normalized_gap=0.5000
+2025-12-14 23:04:23,165 | N=5, spectral_gap=2, normalized_gap=0.4000
+2025-12-14 23:04:23,166 | N=6, spectral_gap=2, normalized_gap=0.3333
+2025-12-14 23:04:23,166 | N=7, spectral_gap=2, normalized_gap=0.2857
+2025-12-14 23:04:23,166 | N=8, spectral_gap=2, normalized_gap=0.2500
+2025-12-14 23:04:23,335 | goal2_hypercube_spectrum: time=0.170s, cpu=0.120s, mem=26.22MB
+2025-12-14 23:04:23,335 | === Goal 3: Quantum-Thermodynamic Proxy ===
+2025-12-14 23:04:23,335 | NOTE: 1-qubit Lindblad proxy, not physical TSU
+2025-12-14 23:04:23,338 | Max energy drift = 2.0201e-02
+2025-12-14 23:04:23,338 | goal3_quantum_proxy: time=0.003s, cpu=0.000s, mem=0.00MB
+2025-12-14 23:04:23,338 | === Goal 4: AIR / IVC Degree Safety ===
+2025-12-14 23:04:23,342 | AIR composite polynomial: alpha*(-b + s + x) + (1 - alpha)*(s**2 - s)
+2025-12-14 23:04:23,342 | AIR degree (trace vars only) = 2
+2025-12-14 23:04:23,342 | goal4_air_ivc: time=0.004s, cpu=0.010s, mem=0.00MB
+2025-12-14 23:04:23,342 | === Goal 5: Post-Quantum Security Sanity ===
+2025-12-14 23:04:23,342 | Estimated BKZ cost ≈ 2^224.3 (classical)
+2025-12-14 23:04:23,343 | Extractor statistical distance ≤ 2^-384
+2025-12-14 23:04:23,343 | goal5_post_quantum: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-14 23:04:23,343 | === Goal 6: XR / Physics Constraints ===
+2025-12-14 23:04:23,347 | Rigid-body constraint degree = 4
+2025-12-14 23:04:23,348 | Quaternion constraint degree = 4
+2025-12-14 23:04:23,348 | XR physics constraints closed under AIR bounds
+2025-12-14 23:04:23,348 | goal6_xr_constraints: time=0.005s, cpu=0.000s, mem=0.00MB
+2025-12-14 23:04:23,348 | === TetraKlein Deep Feasibility Audit COMPLETE ===
