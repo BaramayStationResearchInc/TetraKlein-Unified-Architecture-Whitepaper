@@ -1,0 +1,1362 @@
+[
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 0,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 5,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 10,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 25,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 0,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 2,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 5,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.0,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.01,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.05,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  },
+  {
+    "params": {
+      "delta_delay_ms": 50,
+      "delta_skew_ms": 10,
+      "drop_prob": 0.1,
+      "reorder_window": 8,
+      "max_epochs": 4,
+      "frames_per_epoch": 64
+    },
+    "residuals": [
+      1.0,
+      0.8,
+      0.6400000000000001,
+      0.5120000000000001
+    ],
+    "status": "PASS"
+  }
+]

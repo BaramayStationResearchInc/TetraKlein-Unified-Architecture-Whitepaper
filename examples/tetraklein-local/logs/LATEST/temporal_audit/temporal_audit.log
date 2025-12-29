@@ -1,0 +1,725 @@
+2025-12-28 12:24:03,356 | ========================================================================
+2025-12-28 12:24:03,356 | TETRAKLEIN TEMPORAL ROBUSTNESS AUDIT — NEW RUN
+2025-12-28 12:24:03,356 | ========================================================================
+2025-12-28 12:24:03,356 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,356 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,357 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,357 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,357 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,357 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,357 | Temporal stability maintained
+2025-12-28 12:24:03,358 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,358 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,358 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,358 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,358 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,359 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,359 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,359 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,359 | Temporal stability maintained
+2025-12-28 12:24:03,359 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,359 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,360 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,360 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,360 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,360 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,360 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,360 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,361 | Temporal stability maintained
+2025-12-28 12:24:03,361 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,361 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,361 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,361 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,361 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,362 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,362 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,362 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,362 | Temporal stability maintained
+2025-12-28 12:24:03,362 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,362 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,363 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,363 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,363 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,363 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,363 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,364 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,364 | Temporal stability maintained
+2025-12-28 12:24:03,364 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,364 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,364 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,364 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,365 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,365 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,365 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,365 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,365 | Temporal stability maintained
+2025-12-28 12:24:03,365 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,366 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,366 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,366 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,366 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,366 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,367 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,367 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,367 | Temporal stability maintained
+2025-12-28 12:24:03,367 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,367 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,367 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,368 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,368 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,368 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,368 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,368 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,368 | Temporal stability maintained
+2025-12-28 12:24:03,369 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,369 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,369 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,369 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,369 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,370 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,370 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,370 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,370 | Temporal stability maintained
+2025-12-28 12:24:03,370 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,370 | run_temporal_stress: time=0.001s, cpu=0.010s, mem=0.00MB
+2025-12-28 12:24:03,371 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,371 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,371 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,371 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,371 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,372 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,372 | Temporal stability maintained
+2025-12-28 12:24:03,372 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,372 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,372 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,372 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,373 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,373 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,373 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,373 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,373 | Temporal stability maintained
+2025-12-28 12:24:03,373 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,374 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,374 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,374 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,374 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,374 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,375 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,375 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,375 | Temporal stability maintained
+2025-12-28 12:24:03,375 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,375 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,376 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,376 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=10, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,376 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,376 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,376 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,376 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,377 | Temporal stability maintained
+2025-12-28 12:24:03,377 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,377 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,377 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,377 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=10, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,378 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,378 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,378 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,378 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,379 | Temporal stability maintained
+2025-12-28 12:24:03,379 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,379 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,379 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,379 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=10, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,380 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,380 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,380 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,380 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,380 | Temporal stability maintained
+2025-12-28 12:24:03,380 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,381 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,381 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,381 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=10, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,381 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,382 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,382 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,382 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,382 | Temporal stability maintained
+2025-12-28 12:24:03,382 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,382 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,383 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,383 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,383 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,383 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,383 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,384 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,384 | Temporal stability maintained
+2025-12-28 12:24:03,384 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,384 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,384 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,385 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,385 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,385 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,385 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,385 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,386 | Temporal stability maintained
+2025-12-28 12:24:03,386 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,386 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,386 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,386 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,387 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,387 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,387 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,387 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,387 | Temporal stability maintained
+2025-12-28 12:24:03,388 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,388 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,388 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,388 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,388 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,389 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,389 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,389 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,389 | Temporal stability maintained
+2025-12-28 12:24:03,389 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,389 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,390 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,390 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,390 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,390 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,390 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,391 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,391 | Temporal stability maintained
+2025-12-28 12:24:03,391 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,391 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,391 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,392 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,392 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,392 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,392 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,392 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,393 | Temporal stability maintained
+2025-12-28 12:24:03,393 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,393 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,393 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,393 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,394 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,394 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,394 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,394 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,394 | Temporal stability maintained
+2025-12-28 12:24:03,394 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,395 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,395 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,395 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,395 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,395 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,396 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,396 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,396 | Temporal stability maintained
+2025-12-28 12:24:03,396 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,396 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,397 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,397 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,397 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,397 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,397 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,398 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,398 | Temporal stability maintained
+2025-12-28 12:24:03,398 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,398 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,398 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,399 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,399 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,399 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,399 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,399 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,399 | Temporal stability maintained
+2025-12-28 12:24:03,400 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,400 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,400 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,400 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,400 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,401 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,401 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,401 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,401 | Temporal stability maintained
+2025-12-28 12:24:03,401 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,402 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,402 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,402 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,402 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,402 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,403 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,403 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,403 | Temporal stability maintained
+2025-12-28 12:24:03,403 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,403 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,404 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,404 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=10, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,404 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,404 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,404 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,404 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,405 | Temporal stability maintained
+2025-12-28 12:24:03,405 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,405 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,405 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,405 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=10, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,406 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,406 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,406 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,406 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,406 | Temporal stability maintained
+2025-12-28 12:24:03,407 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,407 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,407 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,407 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=10, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,407 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,408 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,408 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,408 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,408 | Temporal stability maintained
+2025-12-28 12:24:03,408 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,408 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,409 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,409 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=10, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,409 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,409 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,409 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,410 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,410 | Temporal stability maintained
+2025-12-28 12:24:03,410 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,410 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,410 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,411 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,411 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,411 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,411 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,411 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,412 | Temporal stability maintained
+2025-12-28 12:24:03,412 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,412 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,412 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,412 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,413 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,413 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,413 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,413 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,413 | Temporal stability maintained
+2025-12-28 12:24:03,413 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,414 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,414 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,414 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,414 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,414 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,415 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,415 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,415 | Temporal stability maintained
+2025-12-28 12:24:03,415 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,415 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,416 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,416 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,416 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,416 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,416 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,417 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,417 | Temporal stability maintained
+2025-12-28 12:24:03,417 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,417 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,417 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,418 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,418 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,418 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,418 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,418 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,419 | Temporal stability maintained
+2025-12-28 12:24:03,419 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,419 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,419 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,419 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,420 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,420 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,420 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,420 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,420 | Temporal stability maintained
+2025-12-28 12:24:03,420 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,421 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,421 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,421 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,421 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,422 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,422 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,422 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,422 | Temporal stability maintained
+2025-12-28 12:24:03,422 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,422 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,423 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,423 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,423 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,423 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,423 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,424 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,424 | Temporal stability maintained
+2025-12-28 12:24:03,424 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,424 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,424 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,425 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,425 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,425 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,425 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,425 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,426 | Temporal stability maintained
+2025-12-28 12:24:03,426 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,426 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,426 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,426 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,426 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,427 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,427 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,427 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,427 | Temporal stability maintained
+2025-12-28 12:24:03,427 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,428 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,428 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,428 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,428 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,428 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,429 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,429 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,429 | Temporal stability maintained
+2025-12-28 12:24:03,429 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,429 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,430 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,430 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,430 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,430 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,430 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,430 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,431 | Temporal stability maintained
+2025-12-28 12:24:03,431 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,431 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,431 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,431 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=10, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,432 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,432 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,432 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,432 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,432 | Temporal stability maintained
+2025-12-28 12:24:03,433 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,433 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,433 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,433 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=10, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,433 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,434 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,434 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,434 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,434 | Temporal stability maintained
+2025-12-28 12:24:03,434 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,435 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,435 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,435 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=10, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,435 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,435 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,436 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,436 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,436 | Temporal stability maintained
+2025-12-28 12:24:03,436 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,436 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,436 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,437 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=10, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,437 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,437 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,437 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,437 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,438 | Temporal stability maintained
+2025-12-28 12:24:03,438 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,438 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,438 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,438 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,439 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,439 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,439 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,439 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,439 | Temporal stability maintained
+2025-12-28 12:24:03,439 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,440 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,440 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,440 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,440 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,440 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,441 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,441 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,441 | Temporal stability maintained
+2025-12-28 12:24:03,441 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,441 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,442 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,442 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,442 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,442 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,442 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,443 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,443 | Temporal stability maintained
+2025-12-28 12:24:03,443 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,443 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,443 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,444 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,444 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,444 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,444 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,444 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,445 | Temporal stability maintained
+2025-12-28 12:24:03,445 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,445 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,445 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,445 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,446 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,446 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,446 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,446 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,446 | Temporal stability maintained
+2025-12-28 12:24:03,446 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,447 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,447 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,447 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,447 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,447 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,448 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,448 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,448 | Temporal stability maintained
+2025-12-28 12:24:03,448 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,448 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,449 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,449 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,449 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,449 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,449 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,450 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,450 | Temporal stability maintained
+2025-12-28 12:24:03,450 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,450 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,450 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,450 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,451 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,451 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,451 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,451 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,451 | Temporal stability maintained
+2025-12-28 12:24:03,452 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,452 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,452 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,452 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,452 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,453 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,453 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,453 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,453 | Temporal stability maintained
+2025-12-28 12:24:03,453 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,454 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,454 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,454 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,454 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,454 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,454 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,455 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,455 | Temporal stability maintained
+2025-12-28 12:24:03,455 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,455 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,455 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,456 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,456 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,456 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,456 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,456 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,457 | Temporal stability maintained
+2025-12-28 12:24:03,457 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,457 | run_temporal_stress: time=0.001s, cpu=0.010s, mem=0.00MB
+2025-12-28 12:24:03,457 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,457 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,458 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,458 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,458 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,458 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,458 | Temporal stability maintained
+2025-12-28 12:24:03,458 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,459 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,459 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,459 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=10, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,459 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,459 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,460 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,460 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,460 | Temporal stability maintained
+2025-12-28 12:24:03,460 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,460 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,461 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,461 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=10, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,461 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,461 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,461 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,462 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,462 | Temporal stability maintained
+2025-12-28 12:24:03,462 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,462 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,462 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,463 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=10, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,463 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,463 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,463 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,463 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,463 | Temporal stability maintained
+2025-12-28 12:24:03,464 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,464 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,464 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,464 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=10, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,465 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,465 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,465 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,465 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,465 | Temporal stability maintained
+2025-12-28 12:24:03,465 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,466 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,466 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,466 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,466 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,466 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,467 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,467 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,467 | Temporal stability maintained
+2025-12-28 12:24:03,467 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,467 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,468 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,468 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,468 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,468 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,468 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,469 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,469 | Temporal stability maintained
+2025-12-28 12:24:03,469 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,469 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,469 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,470 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,470 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,470 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,470 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,470 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,470 | Temporal stability maintained
+2025-12-28 12:24:03,471 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,471 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,471 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,471 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=0, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,471 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,472 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,472 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,472 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,472 | Temporal stability maintained
+2025-12-28 12:24:03,472 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,472 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,473 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,473 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,473 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,473 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,473 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,474 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,474 | Temporal stability maintained
+2025-12-28 12:24:03,474 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,474 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,474 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,475 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,475 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,475 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,475 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,475 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,475 | Temporal stability maintained
+2025-12-28 12:24:03,476 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,476 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,476 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,476 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,476 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,477 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,477 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,477 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,477 | Temporal stability maintained
+2025-12-28 12:24:03,477 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,478 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,478 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,478 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=2, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,478 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,479 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,479 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,479 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,479 | Temporal stability maintained
+2025-12-28 12:24:03,479 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,479 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,480 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,480 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,480 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,480 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,480 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,481 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,481 | Temporal stability maintained
+2025-12-28 12:24:03,481 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,481 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,481 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,482 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,482 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,482 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,482 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,482 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,482 | Temporal stability maintained
+2025-12-28 12:24:03,483 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,483 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,483 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,483 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,483 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,484 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,484 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,484 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,484 | Temporal stability maintained
+2025-12-28 12:24:03,484 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,485 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,485 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,485 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=5, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,485 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,485 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,486 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,486 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,486 | Temporal stability maintained
+2025-12-28 12:24:03,486 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,486 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,487 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,487 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=10, drop_prob=0.0, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,487 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,487 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,487 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,488 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,488 | Temporal stability maintained
+2025-12-28 12:24:03,488 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,488 | run_temporal_stress: time=0.001s, cpu=0.010s, mem=0.00MB
+2025-12-28 12:24:03,488 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,488 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=10, drop_prob=0.01, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,489 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,489 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,489 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,489 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,489 | Temporal stability maintained
+2025-12-28 12:24:03,490 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,490 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,490 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,490 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=10, drop_prob=0.05, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,490 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,491 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,491 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,491 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,491 | Temporal stability maintained
+2025-12-28 12:24:03,491 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,491 | run_temporal_stress: time=0.001s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,492 | === Temporal Stress Test START ===
+2025-12-28 12:24:03,492 | Params: TemporalParams(delta_delay_ms=50, delta_skew_ms=10, drop_prob=0.1, reorder_window=8, max_epochs=4, frames_per_epoch=64)
+2025-12-28 12:24:03,492 | Epoch 0: residual=1.000000
+2025-12-28 12:24:03,492 | Epoch 1: residual=0.800000
+2025-12-28 12:24:03,493 | Epoch 2: residual=0.640000
+2025-12-28 12:24:03,493 | Epoch 3: residual=0.512000
+2025-12-28 12:24:03,493 | Temporal stability maintained
+2025-12-28 12:24:03,493 | === Temporal Stress Test PASS ===
+2025-12-28 12:24:03,493 | run_temporal_stress: time=0.002s, cpu=0.000s, mem=0.00MB
+2025-12-28 12:24:03,497 | === PARAMETER SWEEP COMPLETE ===
+2025-12-28 12:24:03,497 | === TEMPORAL AUDIT COMPLETE ===
