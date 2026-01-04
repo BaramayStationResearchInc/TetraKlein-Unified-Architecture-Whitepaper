@@ -1,0 +1,6 @@
+python==3.12.x
+numpy==1.26.4
+numba==0.63.x
+llvmlite==0.46.x
+cupy-cuda12x==13.6.0
+coq==8.18.x

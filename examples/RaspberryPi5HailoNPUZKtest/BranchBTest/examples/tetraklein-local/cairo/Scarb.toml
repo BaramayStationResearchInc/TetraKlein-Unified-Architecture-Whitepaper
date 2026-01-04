@@ -1,0 +1,12 @@
+[package]
+name = "tetraklein_air"
+version = "0.1.0"
+edition = "2023_10"
+
+[dependencies]
+
+[dev-dependencies]
+snforge_std = "0.52.0"
+assert_macros = "2.13.1"
+
+[[target.starknet-contract]]

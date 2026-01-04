@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-31T18:52:12.045334+00:00",
+  "system": "Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36",
+  "machine": "aarch64",
+  "python": "3.11.2",
+  "cuda": {
+    "available": false,
+    "error": "ModuleNotFoundError: No module named 'cupy'"
+  },
+  "hailo": {
+    "available": true,
+    "device_count": 1,
+    "devices": [
+      "0001:01:00.0"
+    ],
+    "hailortcli_identify": "Executing on device: 0001:01:00.0\nIdentifying board\nControl Protocol Version: 2\nFirmware Version: 4.20.0 (release,app,extended context switch buffer)\nLogger Version: 0\nBoard Name: Hailo-8\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\nDevice Architecture: HAILO8\nSerial Number: <N/A>\nPart Number: <N/A>\nProduct Name: <N/A>"
+  }
+}

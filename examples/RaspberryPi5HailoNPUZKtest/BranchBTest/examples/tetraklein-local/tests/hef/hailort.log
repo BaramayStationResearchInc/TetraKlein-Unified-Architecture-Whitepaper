@@ -1,0 +1,422 @@
+[2026-01-02 22:51:24.284] [17039] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 22:51:24.297] [17039] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 22:51:24.297] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:24.297] [17039] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 22:51:24.304] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:24.305] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:24.305] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:24.305] [17039] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 22:51:24.305] [17039] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 22:51:24.319] [17039] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 22.146116 milliseconds
+[2026-01-02 22:51:24.319] [17039] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 22.409213 milliseconds
+[2026-01-02 22:51:24.320] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:24.320] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:24.320] [17039] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.260522 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 22:51:24.320] [17039] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.271577 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 22:51:24.321] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:24.321] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.321] [17049] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 22:51:54.321] [17048] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 22:51:54.321] [17047] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 22:51:54.353] [17039] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.003556 ms
+[2026-01-02 22:51:54.353] [17039] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.018167 ms
+[2026-01-02 22:51:54.408] [17039] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 22:51:54.420] [17039] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 22:51:54.420] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.420] [17039] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 22:51:54.425] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:54.426] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:54.426] [17039] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 22:51:54.426] [17039] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 22:51:54.426] [17039] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 22:51:54.438] [17039] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 17.114064 milliseconds
+[2026-01-02 22:51:54.438] [17039] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 17.365104 milliseconds
+[2026-01-02 22:51:54.438] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.438] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.269096 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.276448 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8)
+[2026-01-02 22:51:54.439] [17039] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl2tk_kernel/input_layer1 | timeout: 10s)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer1...
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer1': (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl2tk_kernel/input_layer1 | timeout: 10s) >> (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8) >> HW
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl1tk_kernel/input_layer2 | timeout: 10s)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer2...
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer2': (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl1tk_kernel/input_layer2 | timeout: 10s) >> (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8) >> HW
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [queue_elements.cpp:657] [create] Created (PullQEl_hw_read0tk_kernel/mul_and_add1)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [filter_elements.cpp:372] [create] Created (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating tk_kernel/mul_and_add1...
+[2026-01-02 22:51:54.440] [17039] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'tk_kernel/mul_and_add1': HW >> (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8) >> (PullQEl_hw_read0tk_kernel/mul_and_add1) >> (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 22:52:24.440] [17129] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 22:52:24.440] [17127] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 22:52:24.440] [17127] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=1, name=tk_kernel/input_layer2) because stream was aborted
+[2026-01-02 22:52:24.440] [17126] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 22:52:24.440] [17129] [HailoRT] [info] [edge_elements.cpp:396] [run_pull] Reading from stream was aborted!
+[2026-01-02 22:52:24.440] [17126] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=2, name=tk_kernel/input_layer1) because stream was aborted
+[2026-01-02 22:52:24.440] [17126] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-02 22:52:24.440] [17129] [HailoRT] [info] [queue_elements.cpp:738] [run_in_thread] run_pull of queue element PullQEl_hw_read0tk_kernel/mul_and_add1 was aborted!
+[2026-01-02 22:52:24.440] [17130] [HailoRT] [info] [queue_elements.cpp:706] [run_pull] Shutdown event was signaled in dequeue of queue element PullQEl_hw_read0tk_kernel/mul_and_add1!
+[2026-01-02 22:52:24.440] [17130] [HailoRT] [info] [queue_elements.cpp:862] [run_in_thread] Shutdown event was signaled in run_pull of UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 22:52:24.440] [17134] [HailoRT] [info] [queue_elements.cpp:834] [run_pull] Shutdown event was signaled in dequeue of queue element UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 22:52:24.440] [17134] [HailoRT] [info] [vstream.cpp:1138] [read] Receiving to VStream was shutdown!
+[2026-01-02 22:52:24.440] [17135] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-02 22:52:24.440] [17135] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 22:52:24.440] [17127] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl1tk_kernel/input_layer2 was aborted!
+[2026-01-02 22:52:24.440] [17136] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-02 22:52:24.440] [17136] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 22:52:24.441] [17039] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl2tk_kernel/input_layer1 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 22:52:24.441] [17126] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl2tk_kernel/input_layer1 is not running anymore, exiting..
+[2026-01-02 22:52:24.441] [17039] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl2tk_kernel/input_layer1 has 1 frames in his Queue on destruction
+[2026-01-02 22:52:24.441] [17039] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl1tk_kernel/input_layer2 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 22:52:24.441] [17127] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl1tk_kernel/input_layer2 is not running anymore, exiting..
+[2026-01-02 22:52:24.441] [17039] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl1tk_kernel/input_layer2 has 2 frames in his Queue on destruction
+[2026-01-02 22:52:24.441] [17129] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PullQEl_hw_read0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 22:52:24.441] [17039] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PullQEl_hw_read0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 22:52:24.442] [17130] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 22:52:24.442] [17039] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 22:52:24.442] [17039] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.005908 ms
+[2026-01-02 22:52:24.442] [17039] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.015796 ms
+[2026-01-02 22:52:24.472] [17039] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 22:52:24.484] [17039] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 22:52:24.484] [17039] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 22:52:24.484] [17039] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 22:52:24.489] [17039] [HailoRT] [warning] [resource_manager.cpp:220] [create_hw_latency_meter] HW Latency measurement is supported on networks with a single input. the model has 2 physical inputs.
+[2026-01-02 22:52:24.489] [17039] [HailoRT] [error] [resource_manager.cpp:241] [create_latency_meters_from_config_params] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [resource_manager.cpp:270] [create] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [resource_manager_builder.cpp:1326] [build] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdma_device.cpp:165] [create_configured_network_group] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdma_device.cpp:382] [create_networks_group_vector] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdma_device.cpp:144] [add_hef] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [device_internal.cpp:54] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdevice.cpp:939] [create_physical_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdevice.cpp:967] [create_vdevice_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 22:52:24.490] [17039] [HailoRT] [error] [vdevice.cpp:749] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:00:00.432] [17707] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:00:00.444] [17707] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:00:00.444] [17707] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:00:00.444] [17707] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:00:00.451] [17707] [HailoRT] [error] [buffer_requirements.cpp:84] [get_buffer_requirements_multiple_transfers] CHECK failed - max_desc_page_size given 16384 is bigger than hw max desc page size 4096
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [config_buffer.cpp:259] [create_sg_buffer] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [config_buffer.cpp:66] [create_with_copy_descriptors] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [resource_manager.cpp:60] [create] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [resource_manager.cpp:576] [add_new_context] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [resource_manager_builder.cpp:1365] [build] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [vdma_device.cpp:165] [create_configured_network_group] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [vdma_device.cpp:382] [create_networks_group_vector] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.452] [17707] [HailoRT] [error] [vdma_device.cpp:144] [add_hef] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.453] [17707] [HailoRT] [error] [device_internal.cpp:54] [configure] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.453] [17707] [HailoRT] [error] [vdevice.cpp:939] [create_physical_core_op] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.453] [17707] [HailoRT] [error] [vdevice.cpp:967] [create_vdevice_core_op] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:00:00.453] [17707] [HailoRT] [error] [vdevice.cpp:749] [configure] CHECK_SUCCESS failed with status=HAILO_INTERNAL_FAILURE(8)
+[2026-01-02 23:01:06.960] [17817] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:01:06.972] [17817] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:01:06.972] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:06.972] [17817] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:01:06.978] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:06.978] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:06.978] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:06.978] [17817] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:01:06.978] [17817] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:01:06.996] [17817] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 22.714441 milliseconds
+[2026-01-02 23:01:06.996] [17817] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 23.314742 milliseconds
+[2026-01-02 23:01:06.996] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:06.996] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:06.997] [17817] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.28165 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:01:06.997] [17817] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.291632 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:01:06.997] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:06.997] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.000] [17827] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:01:22.000] [17825] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 23:01:22.000] [17826] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:01:22.032] [17817] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.007685 ms
+[2026-01-02 23:01:22.032] [17817] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.039556 ms
+[2026-01-02 23:01:22.072] [17817] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:01:22.087] [17817] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:01:22.087] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.087] [17817] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:01:22.092] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:22.092] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:22.092] [17817] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:01:22.092] [17817] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:01:22.092] [17817] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:01:22.104] [17817] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 16.798244 milliseconds
+[2026-01-02 23:01:22.104] [17817] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 17.045302 milliseconds
+[2026-01-02 23:01:22.105] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.105] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.105] [17817] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.265632 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:01:22.105] [17817] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.27415 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl2tk_kernel/input_layer1 | timeout: 10s)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer1...
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer1': (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl2tk_kernel/input_layer1 | timeout: 10s) >> (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8) >> HW
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl1tk_kernel/input_layer2 | timeout: 10s)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer2...
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer2': (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl1tk_kernel/input_layer2 | timeout: 10s) >> (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8) >> HW
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [queue_elements.cpp:657] [create] Created (PullQEl_hw_read0tk_kernel/mul_and_add1)
+[2026-01-02 23:01:22.106] [17817] [HailoRT] [info] [filter_elements.cpp:372] [create] Created (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:01:22.107] [17817] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 23:01:22.107] [17817] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating tk_kernel/mul_and_add1...
+[2026-01-02 23:01:22.107] [17817] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'tk_kernel/mul_and_add1': HW >> (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8) >> (PullQEl_hw_read0tk_kernel/mul_and_add1) >> (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 23:01:37.107] [17912] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:01:37.107] [17911] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:01:37.107] [17911] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=2, name=tk_kernel/input_layer1) because stream was aborted
+[2026-01-02 23:01:37.107] [17912] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=1, name=tk_kernel/input_layer2) because stream was aborted
+[2026-01-02 23:01:37.107] [17911] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-02 23:01:37.107] [17912] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl1tk_kernel/input_layer2 was aborted!
+[2026-01-02 23:01:37.107] [17918] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-02 23:01:37.107] [17918] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 23:01:37.107] [17919] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-02 23:01:37.107] [17919] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 23:01:37.107] [17913] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 23:01:37.107] [17913] [HailoRT] [info] [edge_elements.cpp:396] [run_pull] Reading from stream was aborted!
+[2026-01-02 23:01:37.107] [17913] [HailoRT] [info] [queue_elements.cpp:738] [run_in_thread] run_pull of queue element PullQEl_hw_read0tk_kernel/mul_and_add1 was aborted!
+[2026-01-02 23:01:37.107] [17914] [HailoRT] [info] [queue_elements.cpp:706] [run_pull] Shutdown event was signaled in dequeue of queue element PullQEl_hw_read0tk_kernel/mul_and_add1!
+[2026-01-02 23:01:37.107] [17914] [HailoRT] [info] [queue_elements.cpp:862] [run_in_thread] Shutdown event was signaled in run_pull of UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 23:01:37.107] [17917] [HailoRT] [info] [queue_elements.cpp:834] [run_pull] Shutdown event was signaled in dequeue of queue element UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 23:01:37.107] [17917] [HailoRT] [info] [vstream.cpp:1138] [read] Receiving to VStream was shutdown!
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl2tk_kernel/input_layer1 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 23:01:37.170] [17911] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl2tk_kernel/input_layer1 is not running anymore, exiting..
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl2tk_kernel/input_layer1 has 2 frames in his Queue on destruction
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl1tk_kernel/input_layer2 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 23:01:37.170] [17912] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl1tk_kernel/input_layer2 is not running anymore, exiting..
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl1tk_kernel/input_layer2 has 1 frames in his Queue on destruction
+[2026-01-02 23:01:37.170] [17913] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PullQEl_hw_read0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PullQEl_hw_read0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 23:01:37.170] [17914] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 23:01:37.170] [17817] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 23:01:37.171] [17817] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.005537 ms
+[2026-01-02 23:01:37.171] [17817] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.015796 ms
+[2026-01-02 23:01:37.216] [17817] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:01:37.228] [17817] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:01:37.229] [17817] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:01:37.229] [17817] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [warning] [resource_manager.cpp:220] [create_hw_latency_meter] HW Latency measurement is supported on networks with a single input. the model has 2 physical inputs.
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [resource_manager.cpp:241] [create_latency_meters_from_config_params] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [resource_manager.cpp:270] [create] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [resource_manager_builder.cpp:1326] [build] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdma_device.cpp:165] [create_configured_network_group] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdma_device.cpp:382] [create_networks_group_vector] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdma_device.cpp:144] [add_hef] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [device_internal.cpp:54] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdevice.cpp:939] [create_physical_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdevice.cpp:967] [create_vdevice_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:01:37.234] [17817] [HailoRT] [error] [vdevice.cpp:749] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:05:11.852] [17980] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: ROUND_ROBIN, multi_process_service: true
+[2026-01-02 23:05:11.852] [17980] [HailoRT] [error] [vdevice.cpp:550] [create] multi_process_service requires service compilation with HAILO_BUILD_SERVICE
+[2026-01-02 23:06:00.685] [18003] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:06:00.696] [18003] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:06:00.696] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:06:00.696] [18003] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:06:00.701] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:06:00.704] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:06:00.704] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:06:00.705] [18003] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:06:00.705] [18003] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:06:00.718] [18003] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 21.822801 milliseconds
+[2026-01-02 23:06:00.719] [18003] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 22.077302 milliseconds
+[2026-01-02 23:06:00.719] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:06:00.719] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:06:00.719] [18003] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.306706 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:06:00.719] [18003] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.319557 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:06:00.720] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:06:00.720] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.721] [18013] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:07:00.721] [18011] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 23:07:00.721] [18012] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:07:00.721] [18003] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.00424 ms
+[2026-01-02 23:07:00.721] [18003] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.018722 ms
+[2026-01-02 23:07:00.756] [18003] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:07:00.768] [18003] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:07:00.768] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.768] [18003] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:07:00.773] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:07:00.776] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:07:00.777] [18003] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:07:00.777] [18003] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:07:00.777] [18003] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:07:00.791] [18003] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 22.252941 milliseconds
+[2026-01-02 23:07:00.791] [18003] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 22.502801 milliseconds
+[2026-01-02 23:07:00.791] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.792] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.792] [18003] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.264452 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:07:00.792] [18003] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.272248 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:07:00.792] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.792] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl2tk_kernel/input_layer1 | timeout: 10s)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer1...
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer1': (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl2tk_kernel/input_layer1 | timeout: 10s) >> (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8) >> HW
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl1tk_kernel/input_layer2 | timeout: 10s)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer2...
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer2': (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl1tk_kernel/input_layer2 | timeout: 10s) >> (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8) >> HW
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [queue_elements.cpp:657] [create] Created (PullQEl_hw_read0tk_kernel/mul_and_add1)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [filter_elements.cpp:372] [create] Created (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 23:07:00.793] [18003] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating tk_kernel/mul_and_add1...
+[2026-01-02 23:07:00.794] [18003] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'tk_kernel/mul_and_add1': HW >> (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8) >> (PullQEl_hw_read0tk_kernel/mul_and_add1) >> (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 23:08:00.794] [18050] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:08:00.794] [18050] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=2, name=tk_kernel/input_layer1) because stream was aborted
+[2026-01-02 23:08:00.794] [18050] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-02 23:08:00.794] [18059] [HailoRT] [info] [queue_elements.cpp:319] [run_push] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-02 23:08:00.794] [18051] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:08:00.794] [18059] [HailoRT] [info] [filter_elements.cpp:35] [run_push] run_push of PreInferEl2tk_kernel/input_layer1 was aborted!
+[2026-01-02 23:08:00.794] [18051] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=1, name=tk_kernel/input_layer2) because stream was aborted
+[2026-01-02 23:08:00.794] [18054] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 23:08:00.794] [18051] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl1tk_kernel/input_layer2 was aborted!
+[2026-01-02 23:08:00.794] [18054] [HailoRT] [info] [edge_elements.cpp:396] [run_pull] Reading from stream was aborted!
+[2026-01-02 23:08:00.794] [18059] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 23:08:00.794] [18054] [HailoRT] [info] [queue_elements.cpp:738] [run_in_thread] run_pull of queue element PullQEl_hw_read0tk_kernel/mul_and_add1 was aborted!
+[2026-01-02 23:08:00.794] [18060] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-02 23:08:00.794] [18060] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-02 23:08:00.794] [18055] [HailoRT] [info] [queue_elements.cpp:706] [run_pull] Shutdown event was signaled in dequeue of queue element PullQEl_hw_read0tk_kernel/mul_and_add1!
+[2026-01-02 23:08:00.794] [18055] [HailoRT] [info] [queue_elements.cpp:862] [run_in_thread] Shutdown event was signaled in run_pull of UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 23:08:00.794] [18058] [HailoRT] [info] [queue_elements.cpp:834] [run_pull] Shutdown event was signaled in dequeue of queue element UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-02 23:08:00.794] [18058] [HailoRT] [info] [vstream.cpp:1138] [read] Receiving to VStream was shutdown!
+[2026-01-02 23:08:00.794] [18003] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl2tk_kernel/input_layer1 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 23:08:00.794] [18050] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl2tk_kernel/input_layer1 is not running anymore, exiting..
+[2026-01-02 23:08:00.794] [18003] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl2tk_kernel/input_layer1 has 1 frames in his Queue on destruction
+[2026-01-02 23:08:00.794] [18003] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl1tk_kernel/input_layer2 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-02 23:08:00.794] [18051] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl1tk_kernel/input_layer2 is not running anymore, exiting..
+[2026-01-02 23:08:00.794] [18003] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl1tk_kernel/input_layer2 has 1 frames in his Queue on destruction
+[2026-01-02 23:08:00.794] [18054] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PullQEl_hw_read0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 23:08:00.795] [18003] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PullQEl_hw_read0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 23:08:00.795] [18055] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-02 23:08:00.795] [18003] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-02 23:08:00.795] [18003] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.004111 ms
+[2026-01-02 23:08:00.795] [18003] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.011667 ms
+[2026-01-02 23:08:00.840] [18003] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:08:00.852] [18003] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:08:00.852] [18003] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:08:00.852] [18003] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:08:00.857] [18003] [HailoRT] [warning] [resource_manager.cpp:220] [create_hw_latency_meter] HW Latency measurement is supported on networks with a single input. the model has 2 physical inputs.
+[2026-01-02 23:08:00.857] [18003] [HailoRT] [error] [resource_manager.cpp:241] [create_latency_meters_from_config_params] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [resource_manager.cpp:270] [create] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [resource_manager_builder.cpp:1326] [build] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdma_device.cpp:165] [create_configured_network_group] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdma_device.cpp:382] [create_networks_group_vector] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdma_device.cpp:144] [add_hef] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [device_internal.cpp:54] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdevice.cpp:939] [create_physical_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdevice.cpp:967] [create_vdevice_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:08:00.858] [18003] [HailoRT] [error] [vdevice.cpp:749] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-02 23:11:58.264] [18101] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:11:58.276] [18101] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:11:58.276] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:11:58.276] [18101] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:11:58.282] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:11:58.284] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:11:58.284] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:11:58.284] [18101] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:11:58.285] [18101] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:11:58.300] [18101] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 23.524724 milliseconds
+[2026-01-02 23:11:58.300] [18101] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 23.775237 milliseconds
+[2026-01-02 23:11:58.301] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:11:58.301] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:11:58.301] [18101] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.274846 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:11:58.301] [18101] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.284568 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:11:58.301] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:11:58.302] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.302] [18110] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:41:58.302] [18109] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-02 23:41:58.302] [18111] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-02 23:41:58.365] [18101] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.004852 ms
+[2026-01-02 23:41:58.365] [18101] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.025149 ms
+[2026-01-02 23:41:58.405] [18101] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-02 23:41:58.416] [18101] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-02 23:41:58.416] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.416] [18101] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-02 23:41:58.421] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:41:58.421] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:41:58.421] [18101] [HailoRT] [info] [buffer_requirements.cpp:198] [find_initial_desc_page_size] Using non-default initial_desc_page_size of 64, due to a small transfer size (8)
+[2026-01-02 23:41:58.421] [18101] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-01-02 23:41:58.421] [18101] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-01-02 23:41:58.436] [18101] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 19.659609 milliseconds
+[2026-01-02 23:41:58.436] [18101] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 19.930081 milliseconds
+[2026-01-02 23:41:58.437] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.437] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.437] [18101] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.286806 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:41:58.437] [18101] [HailoRT] [info] [core_op.cpp:156] [activate] Activating tk_kernel took 0.298233 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl2tk_kernel/input_layer1 | timeout: 10s)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer1...
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer1': (PreInferEl2tk_kernel/input_layer1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl2tk_kernel/input_layer1 | timeout: 10s) >> (HwWriteEl2tk_kernel/input_layer1 | hw_frame_size: 8) >> HW
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [queue_elements.cpp:284] [create] Created (PushQEl1tk_kernel/input_layer2 | timeout: 10s)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [filter_elements.cpp:101] [create] Created (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating tk_kernel/input_layer2...
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'tk_kernel/input_layer2': (PreInferEl1tk_kernel/input_layer2 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (PushQEl1tk_kernel/input_layer2 | timeout: 10s) >> (HwWriteEl1tk_kernel/input_layer2 | hw_frame_size: 8) >> HW
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [queue_elements.cpp:657] [create] Created (PullQEl_hw_read0tk_kernel/mul_and_add1)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [filter_elements.cpp:372] [create] Created (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1))
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-02 23:41:58.438] [18101] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating tk_kernel/mul_and_add1...
+[2026-01-02 23:41:58.439] [18101] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'tk_kernel/mul_and_add1': HW >> (HwReadEl0tk_kernel/mul_and_add1 | hw_frame_size: 8) >> (PullQEl_hw_read0tk_kernel/mul_and_add1) >> (PostInferEl0tk_kernel/mul_and_add1 | Padding Periph shape - src_shape: (1, 1, 1), dst_shape: (1, 1, 1)) >> (UserBuffQEl0tk_kernel/mul_and_add1 | timeout: 10s)
+[2026-01-03 00:11:58.439] [21509] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer1 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-03 00:11:58.439] [21509] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=2, name=tk_kernel/input_layer1) because stream was aborted
+[2026-01-03 00:11:58.439] [21509] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-03 00:11:58.439] [21510] [HailoRT] [info] [vdevice_native_stream.cpp:142] [write_impl] Failed write to stream tk_kernel/input_layer2 (device: 0001:01:00.0) with status=HAILO_STREAM_ABORT(63)
+[2026-01-03 00:11:58.439] [21516] [HailoRT] [info] [queue_elements.cpp:319] [run_push] run_push of PushQEl2tk_kernel/input_layer1 was aborted!
+[2026-01-03 00:11:58.439] [21511] [HailoRT] [info] [vdevice_native_stream.cpp:331] [read_impl] Failed read from stream HAILO_STREAM_ABORT(63) (device: 0001:01:00.0)
+[2026-01-03 00:11:58.439] [21516] [HailoRT] [info] [filter_elements.cpp:35] [run_push] run_push of PreInferEl2tk_kernel/input_layer1 was aborted!
+[2026-01-03 00:11:58.439] [21511] [HailoRT] [info] [edge_elements.cpp:396] [run_pull] Reading from stream was aborted!
+[2026-01-03 00:11:58.439] [21516] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-03 00:11:58.439] [21510] [HailoRT] [info] [edge_elements.cpp:87] [run_push] Failed to send on input stream InputStream(index=1, name=tk_kernel/input_layer2) because stream was aborted
+[2026-01-03 00:11:58.439] [21510] [HailoRT] [info] [queue_elements.cpp:401] [run_in_thread] run_push of PushQEl1tk_kernel/input_layer2 was aborted!
+[2026-01-03 00:11:58.439] [21511] [HailoRT] [info] [queue_elements.cpp:738] [run_in_thread] run_pull of queue element PullQEl_hw_read0tk_kernel/mul_and_add1 was aborted!
+[2026-01-03 00:11:58.439] [21512] [HailoRT] [info] [queue_elements.cpp:706] [run_pull] Shutdown event was signaled in dequeue of queue element PullQEl_hw_read0tk_kernel/mul_and_add1!
+[2026-01-03 00:11:58.439] [21517] [HailoRT] [info] [vstream.cpp:774] [write] Sending to VStream was shutdown!
+[2026-01-03 00:11:58.439] [21517] [HailoRT] [info] [vstream.cpp:778] [write] Sending to VStream was aborted!
+[2026-01-03 00:11:58.439] [21512] [HailoRT] [info] [queue_elements.cpp:862] [run_in_thread] Shutdown event was signaled in run_pull of UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-03 00:11:58.439] [21515] [HailoRT] [info] [queue_elements.cpp:834] [run_pull] Shutdown event was signaled in dequeue of queue element UserBuffQEl0tk_kernel/mul_and_add1!
+[2026-01-03 00:11:58.439] [21515] [HailoRT] [info] [vstream.cpp:1138] [read] Receiving to VStream was shutdown!
+[2026-01-03 00:11:58.439] [18101] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl2tk_kernel/input_layer1 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-03 00:11:58.439] [21509] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl2tk_kernel/input_layer1 is not running anymore, exiting..
+[2026-01-03 00:11:58.439] [18101] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl2tk_kernel/input_layer1 has 1 frames in his Queue on destruction
+[2026-01-03 00:11:58.439] [18101] [HailoRT] [info] [queue_elements.cpp:360] [execute_deactivate] enqueue() in element PushQEl1tk_kernel/input_layer2 was aborted, got status = HAILO_SHUTDOWN_EVENT_SIGNALED(57)
+[2026-01-03 00:11:58.439] [21510] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PushQEl1tk_kernel/input_layer2 is not running anymore, exiting..
+[2026-01-03 00:11:58.440] [18101] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PushQEl1tk_kernel/input_layer2 has 1 frames in his Queue on destruction
+[2026-01-03 00:11:58.440] [21511] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element PullQEl_hw_read0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-03 00:11:58.440] [18101] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element PullQEl_hw_read0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-03 00:11:58.440] [21512] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl0tk_kernel/mul_and_add1 is not running anymore, exiting..
+[2026-01-03 00:11:58.440] [18101] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl0tk_kernel/mul_and_add1 has 0 frames in his Queue on destruction
+[2026-01-03 00:11:58.440] [18101] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.003944 ms
+[2026-01-03 00:11:58.440] [18101] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.011204 ms
+[2026-01-03 00:11:58.491] [18101] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-01-03 00:11:58.503] [18101] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.12.47+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16) aarch64
+[2026-01-03 00:11:58.504] [18101] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-01-03 00:11:58.504] [18101] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0001:01:00.0
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [warning] [resource_manager.cpp:220] [create_hw_latency_meter] HW Latency measurement is supported on networks with a single input. the model has 2 physical inputs.
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [resource_manager.cpp:241] [create_latency_meters_from_config_params] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [resource_manager.cpp:270] [create] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [resource_manager_builder.cpp:1326] [build] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdma_device.cpp:165] [create_configured_network_group] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdma_device.cpp:382] [create_networks_group_vector] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdma_device.cpp:144] [add_hef] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [device_internal.cpp:54] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdevice.cpp:939] [create_physical_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdevice.cpp:967] [create_vdevice_core_op] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)
+[2026-01-03 00:11:58.509] [18101] [HailoRT] [error] [vdevice.cpp:749] [configure] CHECK_SUCCESS failed with status=HAILO_INVALID_OPERATION(6)

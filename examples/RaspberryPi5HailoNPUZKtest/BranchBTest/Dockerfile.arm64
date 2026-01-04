@@ -1,0 +1,84 @@
+# ============================================================
+# TetraKlein Epoch 0 – Reference Software Environment
+# ============================================================
+
+FROM debian:bookworm-slim
+ENV DEBIAN_FRONTEND=noninteractive
+
+# ------------------------------------------------------------
+# 1. System Dependencies
+# ------------------------------------------------------------
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    curl \
+    git \
+    build-essential \
+    cmake \
+    pkg-config \
+    libssl-dev \
+    python3=3.11.* \
+    python3-pip \
+    python3-venv \
+    python3-numpy \
+    python3-scipy \
+    python3-sympy \
+    && rm -rf /var/lib/apt/lists/*
+
+# ------------------------------------------------------------
+# 2. Rust Toolchain (Pinned)
+# ------------------------------------------------------------
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
+    | sh -s -- -y --profile minimal
+
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+RUN rustup toolchain install 1.92.0 \
+    && rustup default 1.92.0
+
+
+# 3. Cairo / Scarb (Pinned, layout-agnostic install)
+# ------------------------------------------------------------
+RUN curl -L https://github.com/software-mansion/scarb/releases/download/v2.13.1/scarb-v2.13.1-aarch64-unknown-linux-gnu.tar.gz \
+    | tar -xz --strip-components=2 -C /usr/local/bin scarb-v2.13.1-aarch64-unknown-linux-gnu/bin/scarb \
+    && chmod +x /usr/local/bin/scarb
+
+
+RUN scarb --version
+
+# ------------------------------------------------------------
+# 4. StarkNet Foundry (snforge / sncast – pinned)
+# ------------------------------------------------------------
+RUN curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
+
+ENV PATH="/root/.local/bin:${PATH}"
+
+RUN snfoundryup --version 0.52.0 \
+ && snforge --version
+
+
+# ------------------------------------------------------------
+# 5. Workspace
+# ------------------------------------------------------------
+WORKDIR /app
+COPY . .
+
+# ------------------------------------------------------------
+# 6. Python Virtual Environment
+# ------------------------------------------------------------
+RUN python3 -m venv .venv
+ENV VIRTUAL_ENV=/app/.venv
+ENV PATH="/app/.venv/bin:${PATH}"
+
+RUN pip install --upgrade pip
+
+COPY requirements.lock /app/requirements.lock
+RUN test -s requirements.lock
+RUN pip install --no-cache-dir -r requirements.lock
+
+# ------------------------------------------------------------
+# 7. Scope Declaration
+# ------------------------------------------------------------
+RUN echo "TetraKlein Reference Environment (CPU Tier)" \
+ && echo "Hardware-tier performance and NPU execution are out-of-scope."
+
+CMD ["/bin/bash"]

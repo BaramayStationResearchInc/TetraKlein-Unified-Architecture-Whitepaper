@@ -1,0 +1,9 @@
+// src/tests.cairo
+mod test_fdse;
+mod test_replay;
+mod test_epoch_finality;
+mod test_equivocation_depth;
+mod test_replay_depth;
+mod test_fdse_full;
+mod test_temporal_audit;
+mod test_adversarial_audit;

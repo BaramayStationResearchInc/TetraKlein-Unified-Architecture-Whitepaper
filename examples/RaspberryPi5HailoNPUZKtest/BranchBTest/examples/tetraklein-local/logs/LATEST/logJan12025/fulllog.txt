@@ -1,0 +1,1246 @@
+
+
+========================================================================
+0. Environment Check
+========================================================================
+Platform         : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python           : 3.11.2
+Array backend    : NumPy (CPU)
+[ OK ] Environment valid for this execution tier
+
+========================================================================
+1. DTC Contractivity (ρ < 1)
+========================================================================
+Numeric limit  : 0.20000000
+Expected limit : 0.20000000
+[ OK ] DTC contractivity verified
+
+========================================================================
+2. Hypercube Spectral Gap
+========================================================================
+N=  8  gap=0.250000  expected=0.250000
+N= 16  gap=0.125000  expected=0.125000
+N= 32  gap=0.062500  expected=0.062500
+N= 64  gap=0.031250  expected=0.031250
+[ OK ] HBB spectral gap scaling verified
+
+========================================================================
+3. AIR Polynomial Degree Safety
+========================================================================
+Degree in x     : 1
+Total degree   : 3
+[ OK ] AIR degree constraints satisfied
+
+========================================================================
+4. IVC Folding Stability
+========================================================================
+Residual after folding : 1.478088e-02
+[ OK ] IVC folding is contractive and stable
+
+========================================================================
+5. GPU Stability Test (SKIPPED)
+========================================================================
+No CUDA device available — skipping
+
+========================================================================
+VALIDATION COMPLETE
+========================================================================
+Total runtime: 0.14 s
+[ OK ] All applicable TetraKlein validation checks passed
+
+========================================================================
+STARK TRACE VALIDATION — ENVIRONMENT
+========================================================================
+Platform      : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python        : 3.11.2
+Backend       : NumPy (CPU)
+
+========================================================================
+1. Trace Allocation & Memory Safety
+========================================================================
+Trace size: 131,072 × 32  (~0.03 GB)
+[ OK ] Trace allocated safely for this execution tier
+
+========================================================================
+2. AIR Transition Degree Check
+========================================================================
+Transition constraint degree: 2
+[ OK ] AIR transition degree within STARK limits
+
+========================================================================
+3. Trace Evolution
+========================================================================
+Evolution time (8 steps): 0.31 s
+[ OK ] Trace evolution stable under repeated transitions
+
+========================================================================
+4. Constraint Composition Stress
+========================================================================
+Composed constraint degree: 4
+[ OK ] Constraint composition degree safe
+
+========================================================================
+5. Trace Folding / Subsampling
+========================================================================
+Rows before: 131,072
+Rows after : 65,536
+[ OK ] Trace folding behaves as expected
+
+========================================================================
+STARK TRACE VALIDATION COMPLETE
+========================================================================
+
+========================================================================
+FRI DOMAIN & BLOW-UP VALIDATION
+========================================================================
+Platform      : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python        : 3.11.2
+Backend       : NumPy (CPU)
+Trace rows    : 131,072
+Max AIR degree: 4
+
+========================================================================
+Blow-Up Factor = 2
+========================================================================
+Domain size   : 262,144
+Folding depth : 18
+Estimated memory: 0.00 GB
+
+========================================================================
+Allocation Test
+========================================================================
+GPU allocation skipped (CPU reference tier)
+[ OK ] CPU feasibility validated
+
+========================================================================
+Blow-Up Factor = 4
+========================================================================
+Domain size   : 524,288
+Folding depth : 19
+Estimated memory: 0.00 GB
+
+========================================================================
+Allocation Test
+========================================================================
+GPU allocation skipped (CPU reference tier)
+[ OK ] CPU feasibility validated
+
+========================================================================
+Blow-Up Factor = 8
+========================================================================
+Domain size   : 1,048,576
+Folding depth : 20
+Estimated memory: 0.01 GB
+
+========================================================================
+Allocation Test
+========================================================================
+GPU allocation skipped (CPU reference tier)
+[ OK ] CPU feasibility validated
+
+========================================================================
+FRI DOMAIN SUMMARY
+========================================================================
+Blowup=2  | Domain=262,144    | Folds=18 | Memory≈0.00 GB
+Blowup=4  | Domain=524,288    | Folds=19 | Memory≈0.00 GB
+Blowup=8  | Domain=1,048,576  | Folds=20 | Memory≈0.01 GB
+[ OK ] All applicable FRI domain configurations validated
+
+========================================================================
+IVC RECURSION DEPTH & VERIFIER COST VALIDATION
+========================================================================
+Platform      : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python        : 3.11.2
+Backend       : NumPy (CPU)
+FRI domain    : 4,194,304
+FRI folds     : 22
+Max recursion : 64
+Depth=1   | VerifierState=0.000001 GB | Ops≈22
+Depth=2   | VerifierState=0.000001 GB | Ops≈69
+Depth=4   | VerifierState=0.000002 GB | Ops≈204
+Depth=8   | VerifierState=0.000003 GB | Ops≈557
+Depth=16  | VerifierState=0.000009 GB | Ops≈1,438
+Depth=32  | VerifierState=0.000084 GB | Ops≈3,551
+Depth=64  | VerifierState=0.007312 GB | Ops≈8,479
+
+========================================================================
+IVC RECURSION SUMMARY
+========================================================================
+Maximum verified safe recursion depth: 64
+
+Representative points:
+Depth=1   | State=0.000001 GB | VerifierOps≈22
+Depth=8   | State=0.000003 GB | VerifierOps≈557
+Depth=16  | State=0.000009 GB | VerifierOps≈1,438
+Depth=32  | State=0.000084 GB | VerifierOps≈3,551
+Depth=64  | State=0.007312 GB | VerifierOps≈8,479
+[ OK ] IVC recursion bounds validated
+
+========================================================================
+ENGINEERING CONCLUSION
+========================================================================
+IVC recursion remains logarithmically bounded.
+Verifier memory and operation counts grow safely under folding.
+Reference tier confirms asymptotic safety.
+CUDA stress skipped on reference tier.
+
+
+========================================================================
+FRI QUERY BUDGET VALIDATION
+========================================================================
+Platform      : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python        : 3.11.2
+Backend       : NumPy (CPU)
+FRI domain    : 4,194,304
+FRI folds     : 22
+Query sweep   : 4–61
+
+========================================================================
+QUERY → SOUNDNESS → COST
+========================================================================
+Queries=4  | Soundness≈2^-80  | Ops≈2,256    | Latency≈0.0011 ms
+Queries=8  | Soundness≈2^-160 | Ops≈4,512    | Latency≈0.0023 ms
+Queries=16 | Soundness≈2^-320 | Ops≈9,024    | Latency≈0.0045 ms
+Queries=32 | Soundness≈2^-640 | Ops≈18,048   | Latency≈0.0090 ms
+Queries=64 | Soundness≈2^-1280 | Ops≈36,096   | Latency≈0.0180 ms
+
+========================================================================
+TARGET SOUNDNESS ANALYSIS
+========================================================================
+Target 2^-64  → minimum queries = 4
+Target 2^-80  → minimum queries = 4
+Target 2^-96  → minimum queries = 8
+Target 2^-128 → minimum queries = 8
+
+========================================================================
+ENGINEERING CONCLUSION
+========================================================================
+• FRI soundness scales linearly with query count
+• 16–24 queries already exceed 2^-128 security
+• Verifier latency remains sub-millisecond
+• Query buffers are trivial relative to memory limits
+• GPU allocation skipped on reference tier
+
+[ OK ] FRI query budget validated
+
+========================================================================
+LOCAL PROVER BUDGET VALIDATION
+========================================================================
+Platform      : Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Python        : 3.11.2
+Backend       : NumPy (CPU)
+Trace rows    : 131,072
+Trace cols    : 64
+Passes        : 8
+Hash rounds   : 6
+
+========================================================================
+RUNNING PROVER WORKLOAD
+========================================================================
+[ OK ] Kernel checksum = 16740895953996398225
+Elapsed time    = 1.234 s
+
+========================================================================
+PROVER BUDGET SUMMARY
+========================================================================
+Estimated ops          : 452,984,832
+Ops / second           : 367,185,975
+Proofs / second        : 0.811
+Assumed power          : 160 W
+Energy / proof         : 197.39 J
+Proofs / joule         : 0.0051
+
+========================================================================
+ENGINEERING CONCLUSION
+========================================================================
+• Prover workload scales linearly with trace size
+• CPU reference confirms asymptotic cost model
+• GPU measurement skipped on reference tier
+• Energy-per-proof remains bounded and predictable
+
+[ OK ] Local prover budget validated
+
+
+
+========================================================================
+XR EPOCH AGGREGATION VALIDATION
+========================================================================
+
+========================================================================
+IVC-BOUNDED + PIPELINE-MEMORY-AWARE
+========================================================================
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.17 s | NO
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=60  | Epoch=250  ms | Frames=15   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.40 s | Budget=0.35 s | NO
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=60  | Epoch=500  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.35 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=2.80 s | Budget=0.70 s | NO
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=1.40 s | Budget=0.70 s | NO
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.40 s | Budget=0.70 s | NO
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.70 s | OK
+FPS=60  | Epoch=1000 ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.70 s | OK
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.05 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.52 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.26 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=90  | Epoch=250  ms | Frames=22   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=2.10 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=1.05 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.52 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.05 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.52 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.26 s | Budget=0.35 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=90  | Epoch=500  ms | Frames=45   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.35 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=4.20 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=2.10 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=1.05 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=2.10 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=1.05 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.52 s | Budget=0.70 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.05 s | Budget=0.70 s | NO
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.52 s | Budget=0.70 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.26 s | Budget=0.70 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=90  | Epoch=1000 ms | Frames=90   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.70 s | OK
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.40 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.70 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.17 s | NO
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.17 s | OK
+FPS=120 | Epoch=250  ms | Frames=30   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.17 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=2.80 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=1.40 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.40 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.35 s | NO
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.35 s | Budget=0.35 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.17 s | Budget=0.35 s | OK
+FPS=120 | Epoch=500  ms | Frames=60   | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.09 s | Budget=0.35 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=5.25 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=2.62 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=1.31 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=2.80 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=1.40 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=1.40 s | Budget=0.70 s | NO
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | LaneMem=  640 MB | TotalMem=  640 MB | Prover=0.70 s | Budget=0.70 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | LaneMem=  640 MB | TotalMem= 1280 MB | Prover=0.35 s | Budget=0.70 s | OK
+FPS=120 | Epoch=1000 ms | Frames=120  | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | LaneMem=  640 MB | TotalMem= 2560 MB | Prover=0.17 s | Budget=0.70 s | OK
+
+========================================================================
+VIABLE OPERATING POINTS
+========================================================================
+FPS=60  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=8 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=4 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=3 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=6 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=3 | GPUmem≈1.25 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=3 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=8 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=4 | GPUmem≈1.25 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+
+========================================================================
+ENGINEERING CONCLUSION
+========================================================================
+• IVC recursion depth is bounded by verifier state growth
+• Pipeline width is bounded by GPU memory pressure
+• XR-rate feasibility requires joint time + memory satisfaction
+• Aggregation, recursion, and pipelining must be co-designed
+• Safe operating points are explicitly enumerable
+
+[ OK ] Epoch aggregation feasibility validated under full constraints
+
+========================================================================
+XR EPOCH AGGREGATION VALIDATION
+========================================================================
+
+========================================================================
+IVC-BOUNDED + PIPELINE-MEMORY-AWARE
+========================================================================
+FPS=60  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=0.70s | Budget=0.17s | NO
+FPS=60  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=0.35s | Budget=0.17s | NO
+FPS=60  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.17s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=1.40s | Budget=0.35s | NO
+FPS=60  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=0.70s | Budget=0.35s | NO
+FPS=60  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.35s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=0.70s | Budget=0.35s | NO
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.35s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.17s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.35s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.17s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.09s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.35s | OK
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.35s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=2.80s | Budget=0.70s | NO
+FPS=60  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=1.40s | Budget=0.70s | NO
+FPS=60  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.70s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=1.40s | Budget=0.70s | NO
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.70s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.35s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.70s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.35s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.17s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.70s | OK
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.70s | OK
+FPS=90  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=1.05s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=0.52s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.26s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=0.70s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.35s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.17s | Budget=0.17s | OK
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=2.10s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=1.05s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.52s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=1.05s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.52s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.26s | Budget=0.35s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.70s | Budget=0.35s | NO
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.35s | Budget=0.35s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.17s | Budget=0.35s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.35s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.35s | OK
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.35s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=4.20s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=2.10s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=1.05s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=2.10s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=1.05s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.52s | Budget=0.70s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=1.05s | Budget=0.70s | NO
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.52s | Budget=0.70s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.26s | Budget=0.70s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.70s | Budget=0.70s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.35s | Budget=0.70s | OK
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.17s | Budget=0.70s | OK
+FPS=120 | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=1.40s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=0.70s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.35s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=0.70s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.35s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.17s | Budget=0.17s | OK
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.17s | NO
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.17s | OK
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.17s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=2.80s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=1.40s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=0.70s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=1.40s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=0.70s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.35s | Budget=0.35s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=0.70s | Budget=0.35s | NO
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.35s | Budget=0.35s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.17s | Budget=0.35s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.35s | Budget=0.35s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.17s | Budget=0.35s | OK
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.09s | Budget=0.35s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=1 | Prover=5.25s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=2 | Prover=2.62s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Prover=1.31s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=1 | Prover=2.80s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Prover=1.40s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Prover=0.70s | Budget=0.70s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Prover=1.40s | Budget=0.70s | NO
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Prover=0.70s | Budget=0.70s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Prover=0.35s | Budget=0.70s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Prover=0.70s | Budget=0.70s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Prover=0.35s | Budget=0.70s | OK
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Prover=0.17s | Budget=0.70s | OK
+
+========================================================================
+VIABLE OPERATING POINTS
+========================================================================
+FPS=60  | Epoch=250  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=8   | IVCdepth=3  | Pipeline=4 | Proofs/Epoch=8 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=2 | Proofs/Epoch=4 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=60  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=3 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=90  | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=6 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=3 | GPUmem≈1.25 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=3 | GPUmem≈2.50 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=90  | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=250  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=1 | GPUmem≈0.63 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=1 | GPUmem≈1.25 GB
+FPS=120 | Epoch=500  ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=1 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=16  | IVCdepth=4  | Pipeline=4 | Proofs/Epoch=8 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=2 | Proofs/Epoch=4 | GPUmem≈1.25 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=32  | IVCdepth=5  | Pipeline=4 | Proofs/Epoch=4 | GPUmem≈2.50 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=1 | Proofs/Epoch=2 | GPUmem≈0.63 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=2 | Proofs/Epoch=2 | GPUmem≈1.25 GB
+FPS=120 | Epoch=1000 ms | Frames/Proof=64  | IVCdepth=6  | Pipeline=4 | Proofs/Epoch=2 | GPUmem≈2.50 GB
+
+========================================================================
+RECOMMENDED OPERATING PROFILES
+========================================================================
+
+LOW_LATENCY_XR
+--------------
+Minimize XR latency using aggressive pipelining
+  FPS              : 60
+  Epoch window     : 250 ms
+  Frames / Proof   : 8
+  IVC depth        : 3
+  Pipeline width   : 4
+  Proofs / Epoch   : 2
+  GPU memory usage : ~2560 MB
+
+
+BALANCED_XR
+-----------
+Balanced latency, memory, and throughput
+  FPS              : 60
+  Epoch window     : 250 ms
+  Frames / Proof   : 32
+  IVC depth        : 5
+  Pipeline width   : 2
+  Proofs / Epoch   : 1
+  GPU memory usage : ~1280 MB
+
+
+LOW_MEMORY
+----------
+Minimize GPU memory footprint
+  FPS              : 60
+  Epoch window     : 500 ms
+  Frames / Proof   : 64
+  IVC depth        : 6
+  Pipeline width   : 1
+  Proofs / Epoch   : 1
+  GPU memory usage : ~640 MB
+
+
+HIGH_RATE_XR
+------------
+Optimized for sustained 90–120 Hz XR operation
+  FPS              : 90
+  Epoch window     : 250 ms
+  Frames / Proof   : 32
+  IVC depth        : 5
+  Pipeline width   : 2
+  Proofs / Epoch   : 1
+  GPU memory usage : ~1280 MB
+
+
+========================================================================
+ENGINEERING CONCLUSION
+========================================================================
+• IVC recursion depth is bounded by verifier state growth
+• Pipeline width is bounded by GPU memory pressure
+• XR-rate feasibility requires joint time + memory satisfaction
+• Aggregation, recursion, and pipelining must be co-designed
+• Recommended profiles are derived from validated feasibility
+
+[ OK ] Epoch aggregation feasibility validated with recommended profiles
+
+
+==============================================================================
+TETRAKLEIN LOCAL VALIDATION — CPU TIER SUMMARY
+==============================================================================
+Date:   2025-12-31 20:20 UTC
+System: Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36
+Device: Raspberry Pi 5 (16 GB)
+CPU:    ARM Cortex-A76 (4-Core)
+Mode:   CPU-only execution (NumPy backend)
+
+Scope of This Validation
+------------------------
+This report summarizes the results of a complete CPU-tier validation
+chain executed on a Raspberry Pi 5. The objective was to evaluate
+whether the TetraKlein execution model remains correct, deterministic,
+and structurally sound under constrained, non-accelerated hardware.
+
+This validation explicitly excludes GPU acceleration, real-time
+throughput claims, and performance scaling analysis.
+
+
+Validated Subsystems
+--------------------
+The following subsystems were validated at the CPU tier:
+
+• Deterministic execution trace generation
+• Algebraic Intermediate Representation (AIR) degree safety
+• Contractive state evolution and stability bounds
+• Hypercube spectral structure (analytic validation)
+• Incremental Verifiable Computation (IVC) recursion structure
+• Trace folding and subsampling correctness
+• CPU-safe memory behavior under stress tests
+
+
+Key Findings
+------------
+1. Determinism and Stability
+   Execution traces are deterministic and reproducible across runs.
+   State evolution remains contractive, with bounded residuals.
+
+2. Cryptographic Structure
+   AIR constraints respect degree limits suitable for STARK-style
+   verification. No constraint growth or algebraic instability was
+   observed.
+
+3. IVC Structural Soundness
+   Recursive folding preserves correctness and boundedness of state.
+   Recursion depth logic remains valid independent of hardware speed.
+
+4. Resource Discipline
+   All validation steps complete within the memory and compute
+   envelope of a Raspberry Pi 5, without reliance on acceleration.
+
+
+What This Demonstrates
+----------------------
+• The TetraKlein execution model degrades gracefully without GPUs
+• Core correctness does not depend on hardware acceleration
+• Cryptographic structure is independent of throughput
+• Determinism and safety properties hold on embedded-class hardware
+
+
+What This Does NOT Claim
+------------------------
+This validation does not claim:
+
+• Real-time performance on CPU-only hardware
+• XR frame-rate feasibility
+• Practical proof throughput without acceleration
+• Production deployment readiness
+• Hardware-independent performance characteristics
+
+This report establishes correctness and feasibility, not speed.
+
+
+Engineering Implications
+------------------------
+The results indicate that:
+
+• Correctness and safety properties are hardware-agnostic
+• Performance optimizations can be layered without altering logic
+• GPU acceleration improves throughput, not correctness
+• The system remains inspectable and auditable on simple hardware
+
+
+Next Logical Steps
+------------------
+1. Cross-reference CPU-tier results with GPU-tier validation
+2. Formalize hardware-tier separation in documentation
+3. Expand CPU validation to additional edge cases
+4. Use CPU tier as a regression and audit baseline
+
+
+==============================================================================
+FINAL STATEMENT
+==============================================================================
+This Raspberry Pi 5 validation demonstrates that the TetraKlein
+execution model is structurally sound, deterministic, and
+cryptographically well-formed under constrained hardware.
+
+Performance acceleration enhances throughput but is not required
+for correctness, stability, or verification logic.
+
+
+Signed:
+Principal Systems Architect
+Advanced Systems Directorate
+Baramay Station Research Inc.
+
+==============================================================================
+END OF REPORT
+==============================================================================
+
+2025-12-31 16:05:18,916 | ========================================================================
+2025-12-31 16:05:18,916 | TETRAKLEIN ADVERSARIAL AUDIT — RASPBERRY PI 5 (TAIL RECOVERY)
+2025-12-31 16:05:18,916 | ========================================================================
+2025-12-31 16:05:18,934 | SEED=1 | SAFETY=True | MAX_RES=4.660e-01 | RECOVERY=5 | OPS=281
+2025-12-31 16:05:18,950 | SEED=7 | SAFETY=True | MAX_RES=6.095e-01 | RECOVERY=5 | OPS=272
+2025-12-31 16:05:18,966 | SEED=42 | SAFETY=True | MAX_RES=5.691e-01 | RECOVERY=5 | OPS=270
+2025-12-31 16:05:18,981 | SEED=1337 | SAFETY=True | MAX_RES=4.398e-01 | RECOVERY=5 | OPS=272
+2025-12-31 16:05:18,997 | SEED=9001 | SAFETY=True | MAX_RES=4.451e-01 | RECOVERY=5 | OPS=277
+2025-12-31 16:05:18,997 | ========================================================================
+2025-12-31 16:05:18,997 | SAFETY OK       : True
+2025-12-31 16:05:18,997 | MAX RESIDUAL    : 6.095e-01
+2025-12-31 16:05:18,997 | RECOVERY STEPS : 5
+2025-12-31 16:05:18,997 | VERIFIER OPS   : 272
+2025-12-31 16:05:18,997 | RUNTIME        : 0.081s
+2025-12-31 16:05:18,997 | MEMORY DELTA   : 0.23 MB
+2025-12-31 16:05:18,997 | AUDIT COMPLETE
+2025-12-31 14:24:00,978 | ========================================================================
+2025-12-31 14:24:00,979 | TETRAKLEIN DEEP FEASIBILITY AUDIT — RASPBERRY PI 5
+2025-12-31 14:24:00,979 | ========================================================================
+2025-12-31 14:24:00,979 | === Deep Feasibility Audit START ===
+2025-12-31 14:24:00,979 | === Goal 1: Contractivity & Convergence ===
+2025-12-31 14:24:01,017 | Limit(error_t) = Piecewise((sigma/(1 - rho), rho < 1), (oo, True))
+2025-12-31 14:24:01,017 | goal1_contractivity: time=0.038s, cpu=0.030s, mem=2.00MB
+2025-12-31 14:24:01,017 | === Goal 2: Hypercube Spectral Gap ===
+2025-12-31 14:24:01,017 | N=1, spectral_gap=2, normalized_gap=2.0000
+2025-12-31 14:24:01,017 | N=2, spectral_gap=2, normalized_gap=1.0000
+2025-12-31 14:24:01,017 | N=3, spectral_gap=2, normalized_gap=0.6667
+2025-12-31 14:24:01,017 | N=4, spectral_gap=2, normalized_gap=0.5000
+2025-12-31 14:24:01,017 | N=5, spectral_gap=2, normalized_gap=0.4000
+2025-12-31 14:24:01,017 | N=6, spectral_gap=2, normalized_gap=0.3333
+2025-12-31 14:24:01,017 | N=7, spectral_gap=2, normalized_gap=0.2857
+2025-12-31 14:24:01,017 | N=8, spectral_gap=2, normalized_gap=0.2500
+2025-12-31 14:24:01,176 | goal2_hypercube_spectrum: time=0.159s, cpu=0.170s, mem=3.86MB
+2025-12-31 14:24:01,176 | === Goal 3: Quantum-Thermodynamic Proxy ===
+2025-12-31 14:24:01,176 | QuTiP not available — skipping quantum proxy
+2025-12-31 14:24:01,176 | goal3_quantum_proxy: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:24:01,176 | === Goal 4: AIR / IVC Degree Safety ===
+2025-12-31 14:24:01,183 | AIR degree = 2
+2025-12-31 14:24:01,183 | goal4_air_ivc: time=0.007s, cpu=0.010s, mem=0.03MB
+2025-12-31 14:24:01,183 | === Goal 5: Post-Quantum Security Sanity ===
+2025-12-31 14:24:01,183 | BKZ cost ≈ 2^224.3
+2025-12-31 14:24:01,183 | Extractor distance ≤ 2^-384
+2025-12-31 14:24:01,184 | goal5_post_quantum: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:24:01,184 | === Goal 6: XR / Physics Constraints ===
+2025-12-31 14:24:01,194 | XR physics constraints closed under AIR bounds
+2025-12-31 14:24:01,194 | goal6_xr_constraints: time=0.011s, cpu=0.010s, mem=0.05MB
+2025-12-31 14:24:01,194 | === Deep Feasibility Audit COMPLETE ===
+2025-12-31 16:20:01,276 | ========================================================================
+2025-12-31 16:20:01,276 | TETRAKLEIN HBB EPOCH FINALITY WINDOW AUDIT — START
+2025-12-31 16:20:01,276 | ========================================================================
+2025-12-31 16:20:01,277 | FINALITY VIOLATION ATTEMPT: epoch=160 parent_epoch=81
+2025-12-31 16:20:01,277 | SAFETY OK             : True
+2025-12-31 16:20:01,277 | FINAL ROOT            : 2535209195566926588
+2025-12-31 16:20:01,277 | DETECTION EPOCH       : 160
+2025-12-31 16:20:01,277 | REJECTED PARENT EPOCH : 81
+2025-12-31 16:20:01,277 | VERIFIER OPS          : 129
+2025-12-31 16:20:01,278 | RUNTIME               : 0.001s
+2025-12-31 16:20:01,278 | MEMORY DELTA          : 0.00 MB
+2025-12-31 16:20:01,278 | ========================================================================
+2025-12-31 16:20:01,278 | TETRAKLEIN HBB FINALITY AUDIT COMPLETE
+2025-12-31 16:20:01,278 | ========================================================================
+2025-12-31 16:44:56,300 | ========================================================================
+2025-12-31 16:44:56,301 | TETRAKLEIN FULL PIPELINE AUDIT — RASPBERRY PI 5
+2025-12-31 16:44:56,301 | ========================================================================
+2025-12-31 16:44:56,301 | PQC BACKEND: deterministic surrogate (Pi-safe)
+2025-12-31 16:44:56,302 | IPV6_ADDRESS       : fd00:c990:3054:5fb2:f5d5:50bf:9fcb:a36b:bd
+2025-12-31 16:44:56,302 | Q6_NODE_INDEX      : 16
+2025-12-31 16:44:56,302 | AIR_DEGREE_OK      : True
+2025-12-31 16:44:56,302 | IVC_DEPTH          : 32
+2025-12-31 16:44:56,302 | DTC_RESIDUAL       : 6.575825e-11
+2025-12-31 16:44:56,302 | LEDGER_ROOT_SHA256 : 161c92dd5c061c8f705d7b03e97d94c862ae462a4e4b593a55372405615968c8
+2025-12-31 16:44:56,302 | VERIFIER_OPS       : 55
+2025-12-31 16:44:56,302 | RUNTIME            : 0.001s
+2025-12-31 16:44:56,302 | MEMORY_DELTA       : 0.12 MB
+2025-12-31 16:44:56,302 | ========================================================================
+2025-12-31 16:44:56,302 | PIPELINE AUDIT COMPLETE
+2025-12-31 16:44:56,302 | ========================================================================
+2025-12-31 16:16:21,533 | ========================================================================
+2025-12-31 16:16:21,533 | TETRAKLEIN HBB TRUE-ADJACENCY EQUIVOCATION AUDIT
+2025-12-31 16:16:21,533 | ========================================================================
+2025-12-31 16:16:21,533 | EQUIVOCATION DETECTED
+2025-12-31 16:16:21,533 |  epoch=1
+2025-12-31 16:16:21,533 |  parent=3821470886411050200
+2025-12-31 16:16:21,534 |  ADVERSARY → 8015819000203013299
+2025-12-31 16:16:21,534 |  ADVERSARY → 2476142323925131074
+2025-12-31 16:16:21,534 | EQUIVOCATION DETECTED : True
+2025-12-31 16:16:21,534 | DETECTION EPOCH       : 1
+2025-12-31 16:16:21,534 | REJECTED BRANCH       : ADVERSARY
+2025-12-31 16:16:21,534 | VERIFIER OPS          : 2
+2025-12-31 16:16:21,534 | RUNTIME               : 0.000s
+2025-12-31 16:16:21,534 | MEMORY DELTA          : 0.06 MB
+2025-12-31 16:16:21,534 | ========================================================================
+2025-12-31 16:16:21,534 | AUDIT COMPLETE
+2025-12-31 16:16:21,534 | ========================================================================
+2025-12-31 16:23:49,842 | =====================================================================
+2025-12-31 16:23:49,843 | TETRAKLEIN IVC FOLDING EQUIVOCATION AUDIT — START
+2025-12-31 16:23:49,843 | =====================================================================
+2025-12-31 16:23:49,844 | IVC EQUIVOCATION DETECTED
+2025-12-31 16:23:49,844 |  depth=32
+2025-12-31 16:23:49,844 |  A=-940626039997266857
+2025-12-31 16:23:49,844 |  B=-167207054015265705
+2025-12-31 16:23:49,844 | EQUIVOCATION DETECTED : True
+2025-12-31 16:23:49,844 | DETECTION DEPTH       : 32
+2025-12-31 16:23:49,844 | VERIFIER OPS          : 64
+2025-12-31 16:23:49,844 | RUNTIME               : 0.000s
+2025-12-31 16:23:49,844 | MEMORY DELTA          : 0.06 MB
+2025-12-31 16:23:49,844 | =====================================================================
+2025-12-31 16:23:49,844 | TETRAKLEIN IVC FOLDING AUDIT COMPLETE
+2025-12-31 16:23:49,844 | =====================================================================
+2025-12-31 16:38:36,377 | ================================================================================
+2025-12-31 16:38:36,377 | TETRAKLEIN UNIFIED IVC / HBB BATCH SOUNDNESS AUDIT — START
+2025-12-31 16:38:36,377 | ================================================================================
+2025-12-31 16:38:36,378 | [IVC Multi-Fold Batch]
+2025-12-31 16:38:36,378 |   EQUIVOCATION DETECTED : True
+2025-12-31 16:38:36,378 |   DETECTION POINT      : 32
+2025-12-31 16:38:36,378 |   VERIFIER OPS         : 72
+2025-12-31 16:38:36,378 |   RUNTIME              : 0.000s
+2025-12-31 16:38:36,378 | [Adaptive Batch + XR + GKR]
+2025-12-31 16:38:36,378 |   EQUIVOCATION DETECTED : True
+2025-12-31 16:38:36,378 |   DETECTION POINT      : 4
+2025-12-31 16:38:36,378 |   VERIFIER OPS         : 64
+2025-12-31 16:38:36,378 |   RUNTIME              : 0.000s
+2025-12-31 16:38:36,378 | MEMORY DELTA : 0.00 MB
+2025-12-31 16:38:36,378 | ================================================================================
+2025-12-31 16:38:36,378 | UNIFIED IVC / HBB BATCH AUDIT COMPLETE — ALL CHECKS PASSED
+2025-12-31 16:38:36,378 | ================================================================================
+2025-12-31 16:58:18,823 | ========================================================================
+2025-12-31 16:58:18,823 | TETRAKLEIN MEGA COUPLED STRESS AUDIT — PI 5 / HAILO
+2025-12-31 16:58:18,824 | ========================================================================
+2025-12-31 16:58:18,826 | NODE_COUNT            : 6
+2025-12-31 16:58:18,827 | IVC_DEPTH             : 48
+2025-12-31 16:58:18,827 | MAX_DTC_RESIDUAL      : 3.552714e-15
+2025-12-31 16:58:18,827 | EQUIVOCATION_DETECTED : False
+2025-12-31 16:58:18,827 | EQUIVOCATION_EPOCH    : None
+2025-12-31 16:58:18,827 | LEDGER_ROOT_SHA256    : 710954a3095ecbe859a0c2de899ace3617a22db2b1ce60799cc89e1b55302b9c
+2025-12-31 16:58:18,827 | VERIFIER_OPS          : 383
+2025-12-31 16:58:18,827 | RUNTIME               : 0.003s
+2025-12-31 16:58:18,827 | MEMORY_DELTA          : 0.20 MB
+2025-12-31 16:58:18,827 | ========================================================================
+2025-12-31 16:58:18,827 | MEGA COUPLED STRESS AUDIT COMPLETE
+2025-12-31 16:58:18,827 | ========================================================================
+2025-12-31 14:28:58,995 | ========================================================================
+2025-12-31 14:28:58,996 | TETRAKLEIN TEMPORAL ROBUSTNESS AUDIT — RASPBERRY PI 5
+2025-12-31 14:28:58,996 | ========================================================================
+2025-12-31 14:28:58,997 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,997 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:58,997 | Epoch 0: residual=1.000000
+2025-12-31 14:28:58,997 | Epoch 1: residual=0.800000
+2025-12-31 14:28:58,997 | Epoch 2: residual=0.640000
+2025-12-31 14:28:58,997 | Temporal stability maintained
+2025-12-31 14:28:58,997 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:58,998 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:58,998 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,998 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:58,998 | Epoch 0: residual=1.000000
+2025-12-31 14:28:58,998 | Epoch 1: residual=0.800000
+2025-12-31 14:28:58,998 | Epoch 2: residual=0.640000
+2025-12-31 14:28:58,998 | Temporal stability maintained
+2025-12-31 14:28:58,998 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:58,998 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:58,998 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,998 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:58,998 | Epoch 0: residual=1.000000
+2025-12-31 14:28:58,998 | Epoch 1: residual=0.800000
+2025-12-31 14:28:58,998 | Epoch 2: residual=0.640000
+2025-12-31 14:28:58,998 | Temporal stability maintained
+2025-12-31 14:28:58,998 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:58,998 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:58,998 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,998 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:58,999 | Epoch 0: residual=1.000000
+2025-12-31 14:28:58,999 | Epoch 1: residual=0.800000
+2025-12-31 14:28:58,999 | Epoch 2: residual=0.640000
+2025-12-31 14:28:58,999 | Temporal stability maintained
+2025-12-31 14:28:58,999 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:58,999 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:58,999 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,999 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:58,999 | Epoch 0: residual=1.000000
+2025-12-31 14:28:58,999 | Epoch 1: residual=0.800000
+2025-12-31 14:28:58,999 | Epoch 2: residual=0.640000
+2025-12-31 14:28:58,999 | Temporal stability maintained
+2025-12-31 14:28:58,999 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:58,999 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:58,999 | === Temporal Stress Test START ===
+2025-12-31 14:28:58,999 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,000 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,000 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,000 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,000 | Temporal stability maintained
+2025-12-31 14:28:59,000 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,000 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,000 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,000 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,000 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,000 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,000 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,000 | Temporal stability maintained
+2025-12-31 14:28:59,000 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,000 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,000 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,000 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,000 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,000 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,000 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,000 | Temporal stability maintained
+2025-12-31 14:28:59,000 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,001 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,001 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,001 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,001 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,001 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,001 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,001 | Temporal stability maintained
+2025-12-31 14:28:59,001 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,001 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,001 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,001 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,001 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,001 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,001 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,001 | Temporal stability maintained
+2025-12-31 14:28:59,001 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,001 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,001 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,001 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,001 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,001 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,001 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,001 | Temporal stability maintained
+2025-12-31 14:28:59,001 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,002 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,002 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,002 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,002 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,002 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,002 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,002 | Temporal stability maintained
+2025-12-31 14:28:59,002 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,002 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,002 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,002 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,002 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,002 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,002 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,002 | Temporal stability maintained
+2025-12-31 14:28:59,002 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,002 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,002 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,002 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,002 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,002 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,002 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,002 | Temporal stability maintained
+2025-12-31 14:28:59,002 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,003 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,003 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,003 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,003 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,003 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,003 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,003 | Temporal stability maintained
+2025-12-31 14:28:59,003 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,003 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,003 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,003 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,003 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,003 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,003 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,003 | Temporal stability maintained
+2025-12-31 14:28:59,003 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,003 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,003 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,003 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,003 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,003 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,003 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,003 | Temporal stability maintained
+2025-12-31 14:28:59,003 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,004 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,004 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,004 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,004 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,004 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,004 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,004 | Temporal stability maintained
+2025-12-31 14:28:59,004 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,004 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,004 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,004 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,004 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,004 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,004 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,004 | Temporal stability maintained
+2025-12-31 14:28:59,004 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,004 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,004 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,004 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,004 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,004 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,004 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,005 | Temporal stability maintained
+2025-12-31 14:28:59,005 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,005 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,005 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,005 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,005 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,005 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,005 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,005 | Temporal stability maintained
+2025-12-31 14:28:59,005 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,005 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,005 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,005 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,005 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,005 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,005 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,005 | Temporal stability maintained
+2025-12-31 14:28:59,005 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,005 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,005 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,005 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,005 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,005 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,005 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,006 | Temporal stability maintained
+2025-12-31 14:28:59,006 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,006 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,006 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,006 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,006 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,006 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,006 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,006 | Temporal stability maintained
+2025-12-31 14:28:59,006 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,006 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,006 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,006 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,006 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,006 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,006 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,006 | Temporal stability maintained
+2025-12-31 14:28:59,006 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,006 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,006 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,006 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,006 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,006 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,006 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,007 | Temporal stability maintained
+2025-12-31 14:28:59,007 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,007 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,007 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,007 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,007 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,007 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,007 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,007 | Temporal stability maintained
+2025-12-31 14:28:59,007 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,007 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,007 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,007 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,007 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,007 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,007 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,007 | Temporal stability maintained
+2025-12-31 14:28:59,007 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,007 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,007 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,007 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,007 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,007 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,007 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,008 | Temporal stability maintained
+2025-12-31 14:28:59,008 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,008 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,008 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,008 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,008 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,008 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,008 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,008 | Temporal stability maintained
+2025-12-31 14:28:59,008 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,008 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,008 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,008 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,008 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,008 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,008 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,008 | Temporal stability maintained
+2025-12-31 14:28:59,008 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,008 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,008 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,008 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,008 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,008 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,009 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,009 | Temporal stability maintained
+2025-12-31 14:28:59,009 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,009 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,009 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,009 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,009 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,009 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,009 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,009 | Temporal stability maintained
+2025-12-31 14:28:59,009 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,009 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,009 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,009 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,009 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,009 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,009 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,009 | Temporal stability maintained
+2025-12-31 14:28:59,009 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,009 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,009 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,009 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,010 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,010 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,010 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,010 | Temporal stability maintained
+2025-12-31 14:28:59,010 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,010 | run_temporal_stress: time=0.000s, cpu=0.010s, mem=0.00MB
+2025-12-31 14:28:59,010 | === Temporal Stress Test START ===
+2025-12-31 14:28:59,010 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2025-12-31 14:28:59,010 | Epoch 0: residual=1.000000
+2025-12-31 14:28:59,010 | Epoch 1: residual=0.800000
+2025-12-31 14:28:59,010 | Epoch 2: residual=0.640000
+2025-12-31 14:28:59,010 | Temporal stability maintained
+2025-12-31 14:28:59,010 | === Temporal Stress Test PASS ===
+2025-12-31 14:28:59,010 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2025-12-31 14:28:59,011 | === PARAMETER SWEEP COMPLETE ===
+2025-12-31 14:28:59,011 | === TEMPORAL AUDIT COMPLETE ===
+
+
+

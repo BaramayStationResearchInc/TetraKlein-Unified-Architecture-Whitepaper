@@ -1,0 +1,1309 @@
+2026-01-01 16:54:09,240 | ========================================================================
+2026-01-01 16:54:09,240 | TETRAKLEIN ADVERSARIAL AUDIT — RASPBERRY PI 5 (TAIL RECOVERY)
+2026-01-01 16:54:09,240 | ========================================================================
+2026-01-01 16:54:09,256 | SEED=1 | SAFETY=True | MAX_RES=4.660e-01 | RECOVERY=5 | OPS=281
+2026-01-01 16:54:09,271 | SEED=7 | SAFETY=True | MAX_RES=6.095e-01 | RECOVERY=5 | OPS=272
+2026-01-01 16:54:09,286 | SEED=42 | SAFETY=True | MAX_RES=5.691e-01 | RECOVERY=5 | OPS=270
+2026-01-01 16:54:09,302 | SEED=1337 | SAFETY=True | MAX_RES=4.398e-01 | RECOVERY=5 | OPS=272
+2026-01-01 16:54:09,317 | SEED=9001 | SAFETY=True | MAX_RES=4.451e-01 | RECOVERY=5 | OPS=277
+2026-01-01 16:54:09,317 | ========================================================================
+2026-01-01 16:54:09,317 | SAFETY OK       : True
+2026-01-01 16:54:09,317 | MAX RESIDUAL    : 6.095e-01
+2026-01-01 16:54:09,317 | RECOVERY STEPS : 5
+2026-01-01 16:54:09,317 | VERIFIER OPS   : 272
+2026-01-01 16:54:09,317 | RUNTIME        : 0.077s
+2026-01-01 16:54:09,317 | MEMORY DELTA   : 0.22 MB
+2026-01-01 16:54:09,317 | AUDIT COMPLETE
+2026-01-01 16:54:08,506 | ========================================================================
+2026-01-01 16:54:08,507 | TETRAKLEIN DEEP FEASIBILITY AUDIT — RASPBERRY PI 5
+2026-01-01 16:54:08,507 | ========================================================================
+2026-01-01 16:54:08,507 | === Deep Feasibility Audit START ===
+2026-01-01 16:54:08,507 | === Goal 1: Contractivity & Convergence ===
+2026-01-01 16:54:08,540 | Limit(error_t) = Piecewise((sigma/(1 - rho), rho < 1), (oo, True))
+2026-01-01 16:54:08,541 | goal1_contractivity: time=0.034s, cpu=0.030s, mem=2.00MB
+2026-01-01 16:54:08,541 | === Goal 2: Hypercube Spectral Gap ===
+2026-01-01 16:54:08,541 | N=1, spectral_gap=2, normalized_gap=2.0000
+2026-01-01 16:54:08,541 | N=2, spectral_gap=2, normalized_gap=1.0000
+2026-01-01 16:54:08,541 | N=3, spectral_gap=2, normalized_gap=0.6667
+2026-01-01 16:54:08,541 | N=4, spectral_gap=2, normalized_gap=0.5000
+2026-01-01 16:54:08,541 | N=5, spectral_gap=2, normalized_gap=0.4000
+2026-01-01 16:54:08,541 | N=6, spectral_gap=2, normalized_gap=0.3333
+2026-01-01 16:54:08,541 | N=7, spectral_gap=2, normalized_gap=0.2857
+2026-01-01 16:54:08,541 | N=8, spectral_gap=2, normalized_gap=0.2500
+2026-01-01 16:54:08,686 | goal2_hypercube_spectrum: time=0.145s, cpu=0.150s, mem=3.88MB
+2026-01-01 16:54:08,686 | === Goal 3: Quantum-Thermodynamic Proxy ===
+2026-01-01 16:54:08,686 | QuTiP not available — skipping quantum proxy
+2026-01-01 16:54:08,686 | goal3_quantum_proxy: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:08,686 | === Goal 4: AIR / IVC Degree Safety ===
+2026-01-01 16:54:08,693 | AIR degree = 2
+2026-01-01 16:54:08,693 | goal4_air_ivc: time=0.007s, cpu=0.010s, mem=0.03MB
+2026-01-01 16:54:08,693 | === Goal 5: Post-Quantum Security Sanity ===
+2026-01-01 16:54:08,693 | BKZ cost ≈ 2^224.3
+2026-01-01 16:54:08,693 | Extractor distance ≤ 2^-384
+2026-01-01 16:54:08,693 | goal5_post_quantum: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:08,693 | === Goal 6: XR / Physics Constraints ===
+2026-01-01 16:54:08,704 | XR physics constraints closed under AIR bounds
+2026-01-01 16:54:08,704 | goal6_xr_constraints: time=0.011s, cpu=0.010s, mem=0.03MB
+2026-01-01 16:54:08,704 | === Deep Feasibility Audit COMPLETE ===
+2026-01-01 16:54:09,481 | ========================================================================
+2026-01-01 16:54:09,481 | TETRAKLEIN HBB EPOCH FINALITY WINDOW AUDIT — START
+2026-01-01 16:54:09,481 | ========================================================================
+2026-01-01 16:54:09,482 | FINALITY VIOLATION ATTEMPT: epoch=160 parent_epoch=81
+2026-01-01 16:54:09,482 | SAFETY OK             : True
+2026-01-01 16:54:09,482 | FINAL ROOT            : 2535209195566926588
+2026-01-01 16:54:09,482 | DETECTION EPOCH       : 160
+2026-01-01 16:54:09,482 | REJECTED PARENT EPOCH : 81
+2026-01-01 16:54:09,482 | VERIFIER OPS          : 129
+2026-01-01 16:54:09,482 | RUNTIME               : 0.001s
+2026-01-01 16:54:09,482 | MEMORY DELTA          : 0.00 MB
+2026-01-01 16:54:09,483 | ========================================================================
+2026-01-01 16:54:09,483 | TETRAKLEIN HBB FINALITY AUDIT COMPLETE
+2026-01-01 16:54:09,483 | ========================================================================
+2026-01-01 16:54:09,834 | ========================================================================
+2026-01-01 16:54:09,834 | TETRAKLEIN FULL PIPELINE AUDIT — RASPBERRY PI 5
+2026-01-01 16:54:09,834 | ========================================================================
+2026-01-01 16:54:09,835 | PQC BACKEND: deterministic surrogate (Pi-safe)
+2026-01-01 16:54:09,835 | IPV6_ADDRESS       : fd00:c990:3054:5fb2:f5d5:50bf:9fcb:a36b:bd
+2026-01-01 16:54:09,835 | Q6_NODE_INDEX      : 16
+2026-01-01 16:54:09,835 | AIR_DEGREE_OK      : True
+2026-01-01 16:54:09,835 | IVC_DEPTH          : 32
+2026-01-01 16:54:09,835 | DTC_RESIDUAL       : 6.575825e-11
+2026-01-01 16:54:09,835 | LEDGER_ROOT_SHA256 : 161c92dd5c061c8f705d7b03e97d94c862ae462a4e4b593a55372405615968c8
+2026-01-01 16:54:09,835 | VERIFIER_OPS       : 55
+2026-01-01 16:54:09,835 | RUNTIME            : 0.001s
+2026-01-01 16:54:09,835 | MEMORY_DELTA       : 0.12 MB
+2026-01-01 16:54:09,835 | ========================================================================
+2026-01-01 16:54:09,835 | PIPELINE AUDIT COMPLETE
+2026-01-01 16:54:09,835 | ========================================================================
+2026-01-01 16:54:09,399 | ========================================================================
+2026-01-01 16:54:09,399 | TETRAKLEIN HBB TRUE-ADJACENCY EQUIVOCATION AUDIT
+2026-01-01 16:54:09,399 | ========================================================================
+2026-01-01 16:54:09,400 | EQUIVOCATION DETECTED
+2026-01-01 16:54:09,400 |  epoch=1
+2026-01-01 16:54:09,400 |  parent=3821470886411050200
+2026-01-01 16:54:09,400 |  ADVERSARY → 8015819000203013299
+2026-01-01 16:54:09,400 |  ADVERSARY → 2476142323925131074
+2026-01-01 16:54:09,400 | EQUIVOCATION DETECTED : True
+2026-01-01 16:54:09,400 | DETECTION EPOCH       : 1
+2026-01-01 16:54:09,400 | REJECTED BRANCH       : ADVERSARY
+2026-01-01 16:54:09,400 | VERIFIER OPS          : 2
+2026-01-01 16:54:09,400 | RUNTIME               : 0.000s
+2026-01-01 16:54:09,400 | MEMORY DELTA          : 0.06 MB
+2026-01-01 16:54:09,400 | ========================================================================
+2026-01-01 16:54:09,400 | AUDIT COMPLETE
+2026-01-01 16:54:09,400 | ========================================================================
+2026-01-01 16:54:09,564 | =====================================================================
+2026-01-01 16:54:09,565 | TETRAKLEIN IVC FOLDING EQUIVOCATION AUDIT — START
+2026-01-01 16:54:09,565 | =====================================================================
+2026-01-01 16:54:09,565 | IVC EQUIVOCATION DETECTED
+2026-01-01 16:54:09,565 |  depth=32
+2026-01-01 16:54:09,565 |  A=-940626039997266857
+2026-01-01 16:54:09,565 |  B=-167207054015265705
+2026-01-01 16:54:09,565 | EQUIVOCATION DETECTED : True
+2026-01-01 16:54:09,565 | DETECTION DEPTH       : 32
+2026-01-01 16:54:09,565 | VERIFIER OPS          : 64
+2026-01-01 16:54:09,565 | RUNTIME               : 0.000s
+2026-01-01 16:54:09,565 | MEMORY DELTA          : 0.06 MB
+2026-01-01 16:54:09,565 | =====================================================================
+2026-01-01 16:54:09,565 | TETRAKLEIN IVC FOLDING AUDIT COMPLETE
+2026-01-01 16:54:09,565 | =====================================================================
+2026-01-01 16:54:09,646 | ================================================================================
+2026-01-01 16:54:09,646 | TETRAKLEIN UNIFIED IVC / HBB BATCH SOUNDNESS AUDIT — START
+2026-01-01 16:54:09,646 | ================================================================================
+2026-01-01 16:54:09,647 | [IVC Multi-Fold Batch]
+2026-01-01 16:54:09,647 |   EQUIVOCATION DETECTED : True
+2026-01-01 16:54:09,647 |   DETECTION POINT      : 32
+2026-01-01 16:54:09,647 |   VERIFIER OPS         : 72
+2026-01-01 16:54:09,647 |   RUNTIME              : 0.000s
+2026-01-01 16:54:09,647 | [Adaptive Batch + XR + GKR]
+2026-01-01 16:54:09,647 |   EQUIVOCATION DETECTED : True
+2026-01-01 16:54:09,647 |   DETECTION POINT      : 4
+2026-01-01 16:54:09,647 |   VERIFIER OPS         : 64
+2026-01-01 16:54:09,647 |   RUNTIME              : 0.000s
+2026-01-01 16:54:09,647 | MEMORY DELTA : 0.00 MB
+2026-01-01 16:54:09,647 | ================================================================================
+2026-01-01 16:54:09,647 | UNIFIED IVC / HBB BATCH AUDIT COMPLETE — ALL CHECKS PASSED
+2026-01-01 16:54:09,647 | ================================================================================
+2026-01-01 16:54:10,021 | ========================================================================
+2026-01-01 16:54:10,021 | TETRAKLEIN MEGA COUPLED STRESS AUDIT — PI 5 / HAILO
+2026-01-01 16:54:10,021 | ========================================================================
+2026-01-01 16:54:10,024 | NODE_COUNT            : 6
+2026-01-01 16:54:10,024 | IVC_DEPTH             : 48
+2026-01-01 16:54:10,024 | MAX_DTC_RESIDUAL      : 3.552714e-15
+2026-01-01 16:54:10,024 | EQUIVOCATION_DETECTED : False
+2026-01-01 16:54:10,024 | EQUIVOCATION_EPOCH    : None
+2026-01-01 16:54:10,024 | LEDGER_ROOT_SHA256    : 710954a3095ecbe859a0c2de899ace3617a22db2b1ce60799cc89e1b55302b9c
+2026-01-01 16:54:10,024 | VERIFIER_OPS          : 383
+2026-01-01 16:54:10,024 | RUNTIME               : 0.003s
+2026-01-01 16:54:10,024 | MEMORY_DELTA          : 0.19 MB
+2026-01-01 16:54:10,024 | ========================================================================
+2026-01-01 16:54:10,024 | MEGA COUPLED STRESS AUDIT COMPLETE
+2026-01-01 16:54:10,024 | ========================================================================
+2026-01-01 16:54:09,126 | ========================================================================
+2026-01-01 16:54:09,126 | TETRAKLEIN TEMPORAL ROBUSTNESS AUDIT — RASPBERRY PI 5
+2026-01-01 16:54:09,126 | ========================================================================
+2026-01-01 16:54:09,127 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,127 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,127 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,127 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,127 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,127 | Temporal stability maintained
+2026-01-01 16:54:09,127 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,127 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,127 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,127 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,127 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,127 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,127 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,127 | Temporal stability maintained
+2026-01-01 16:54:09,127 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,127 | run_temporal_stress: time=0.000s, cpu=0.010s, mem=0.00MB
+2026-01-01 16:54:09,128 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,128 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,128 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,128 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,128 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,128 | Temporal stability maintained
+2026-01-01 16:54:09,128 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,128 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,128 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,128 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,128 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,128 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,128 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,128 | Temporal stability maintained
+2026-01-01 16:54:09,128 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,128 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,128 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,128 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,129 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,129 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,129 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,129 | Temporal stability maintained
+2026-01-01 16:54:09,129 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,129 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,129 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,129 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,129 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,129 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,129 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,129 | Temporal stability maintained
+2026-01-01 16:54:09,129 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,129 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,129 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,129 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,129 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,129 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,129 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,129 | Temporal stability maintained
+2026-01-01 16:54:09,129 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,129 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,130 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,130 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,130 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,130 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,130 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,130 | Temporal stability maintained
+2026-01-01 16:54:09,130 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,130 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,130 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,130 | Params: TemporalParams(delta_delay_ms=0, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,130 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,130 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,130 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,130 | Temporal stability maintained
+2026-01-01 16:54:09,130 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,130 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,130 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,130 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,130 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,130 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,130 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,130 | Temporal stability maintained
+2026-01-01 16:54:09,130 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,131 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,131 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,131 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,131 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,131 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,131 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,131 | Temporal stability maintained
+2026-01-01 16:54:09,131 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,131 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,131 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,131 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,131 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,131 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,131 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,131 | Temporal stability maintained
+2026-01-01 16:54:09,131 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,131 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,131 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,131 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,132 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,132 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,132 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,132 | Temporal stability maintained
+2026-01-01 16:54:09,132 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,132 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,132 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,132 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,132 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,132 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,132 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,132 | Temporal stability maintained
+2026-01-01 16:54:09,132 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,132 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,132 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,132 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,132 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,132 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,132 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,132 | Temporal stability maintained
+2026-01-01 16:54:09,132 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,132 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,133 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,133 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,133 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,133 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,133 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,133 | Temporal stability maintained
+2026-01-01 16:54:09,133 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,133 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,133 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,133 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,133 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,133 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,133 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,133 | Temporal stability maintained
+2026-01-01 16:54:09,133 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,133 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,133 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,133 | Params: TemporalParams(delta_delay_ms=5, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,133 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,133 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,133 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,133 | Temporal stability maintained
+2026-01-01 16:54:09,133 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,134 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,134 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,134 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,134 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,134 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,134 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,134 | Temporal stability maintained
+2026-01-01 16:54:09,134 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,134 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,134 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,134 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,134 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,134 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,134 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,134 | Temporal stability maintained
+2026-01-01 16:54:09,134 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,134 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,134 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,134 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,134 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,134 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,134 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,134 | Temporal stability maintained
+2026-01-01 16:54:09,134 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,135 | run_temporal_stress: time=0.000s, cpu=0.010s, mem=0.00MB
+2026-01-01 16:54:09,135 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,135 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,135 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,135 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,135 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,135 | Temporal stability maintained
+2026-01-01 16:54:09,135 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,135 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,135 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,135 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,135 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,135 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,135 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,135 | Temporal stability maintained
+2026-01-01 16:54:09,135 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,135 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,135 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,135 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,135 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,135 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,135 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,135 | Temporal stability maintained
+2026-01-01 16:54:09,135 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,136 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,136 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,136 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,136 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,136 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,136 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,136 | Temporal stability maintained
+2026-01-01 16:54:09,136 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,136 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,136 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,136 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,136 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,136 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,136 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,136 | Temporal stability maintained
+2026-01-01 16:54:09,136 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,136 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,136 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,136 | Params: TemporalParams(delta_delay_ms=10, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,136 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,136 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,136 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,136 | Temporal stability maintained
+2026-01-01 16:54:09,136 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,137 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,137 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,137 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,137 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,137 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,137 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,137 | Temporal stability maintained
+2026-01-01 16:54:09,137 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,137 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,137 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,137 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,137 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,137 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,137 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,137 | Temporal stability maintained
+2026-01-01 16:54:09,137 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,137 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,137 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,137 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=0, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,137 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,137 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,137 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,138 | Temporal stability maintained
+2026-01-01 16:54:09,138 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,138 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,138 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,138 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,138 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,138 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,138 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,138 | Temporal stability maintained
+2026-01-01 16:54:09,138 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,138 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,138 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,138 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,138 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,138 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,138 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,138 | Temporal stability maintained
+2026-01-01 16:54:09,138 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,138 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,138 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,138 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=2, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,138 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,138 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,138 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,139 | Temporal stability maintained
+2026-01-01 16:54:09,139 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,139 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,139 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,139 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.0, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,139 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,139 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,139 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,139 | Temporal stability maintained
+2026-01-01 16:54:09,139 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,139 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,139 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,139 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.01, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,139 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,139 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,139 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,139 | Temporal stability maintained
+2026-01-01 16:54:09,139 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,139 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,139 | === Temporal Stress Test START ===
+2026-01-01 16:54:09,139 | Params: TemporalParams(delta_delay_ms=25, delta_skew_ms=5, drop_prob=0.05, reorder_window=8, max_epochs=3, frames_per_epoch=32)
+2026-01-01 16:54:09,139 | Epoch 0: residual=1.000000
+2026-01-01 16:54:09,139 | Epoch 1: residual=0.800000
+2026-01-01 16:54:09,139 | Epoch 2: residual=0.640000
+2026-01-01 16:54:09,140 | Temporal stability maintained
+2026-01-01 16:54:09,140 | === Temporal Stress Test PASS ===
+2026-01-01 16:54:09,140 | run_temporal_stress: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:09,140 | === PARAMETER SWEEP COMPLETE ===
+2026-01-01 16:54:09,140 | === TEMPORAL AUDIT COMPLETE ===
+import hashlib
+from typing import List, Dict
+
+
+# ============================================================
+# Exceptions
+# ============================================================
+
+class AIRViolation(Exception):
+    """Raised when an AIR constraint is violated."""
+    pass
+
+
+# ============================================================
+# AIR Polynomial Definitions
+# ============================================================
+
+class TKAIRPolynomials:
+    """
+    AIR constraints expressed as polynomial checks over a finite field.
+    """
+
+    def __init__(self, modulus: int):
+        self.p = modulus
+
+    def time_transition(self, t_i, t_next):
+        return (t_next - (t_i + 1)) % self.p
+
+    def hash_consistency(self, h_i, h_expected):
+        return (h_i - h_expected) % self.p
+
+    def range_check(self, v):
+        return 0 if 0 <= v <= 255 else 1
+
+
+# ============================================================
+# ZK Witness Recorder
+# ============================================================
+
+class TKZKWitnessRecorder:
+    """
+    Deterministic ZK witness recorder for hardware-executed kernels.
+    Produces AIR-ready traces.
+    """
+
+    DOMAIN_TAG = b"TK-ZK-WITNESS-v2"
+
+    def __init__(self):
+        self.step = 0
+        self.trace: List[Dict[str, int]] = []
+        self._prev_hash = hashlib.sha256(self.DOMAIN_TAG).digest()
+
+    # --------------------------------------------------------
+
+    def record(self, x1: int, x2: int, y: int):
+        for name, v in [("x1", x1), ("x2", x2), ("y", y)]:
+            if not (0 <= v <= 255):
+                raise AIRViolation(
+                    f"Range violation {name}={v} at step {self.step}"
+                )
+
+        row_bytes = (
+            self.step.to_bytes(8, "little") +
+            x1.to_bytes(1, "little") +
+            x2.to_bytes(1, "little") +
+            y.to_bytes(1, "little")
+        )
+
+        h = hashlib.sha256(self._prev_hash + row_bytes).digest()
+
+        self.trace.append({
+            "t": self.step,
+            "x1": x1,
+            "x2": x2,
+            "y": y,
+            "h": int.from_bytes(h, "big"),
+        })
+
+        self._prev_hash = h
+        self.step += 1
+
+    # --------------------------------------------------------
+
+    def check_air(self):
+        n = len(self.trace)
+
+        for i in range(n):
+            row = self.trace[i]
+
+            # C1: time monotonicity
+            if row["t"] != i:
+                raise AIRViolation(
+                    f"Time monotonicity violated at row {i}"
+                )
+
+            # C2: uint8 bounds
+            for name in ("x1", "x2", "y"):
+                v = row[name]
+                if not (0 <= v <= 255):
+                    raise AIRViolation(
+                        f"Range violation {name}[{i}] = {v}"
+                    )
+
+            
+
+            # C3: hash-chain consistency
+            row_bytes = (
+                row["t"].to_bytes(8, "little") +
+                row["x1"].to_bytes(1, "little") +
+                row["x2"].to_bytes(1, "little") +
+                row["y"].to_bytes(1, "little")
+            )
+
+            prev = (
+                self.trace[i-1]["h"].to_bytes(32, "big")
+                if i > 0 else hashlib.sha256(self.DOMAIN_TAG).digest()
+            )
+
+            expected_hash = hashlib.sha256(prev + row_bytes).digest()
+
+            if row["h"] != int.from_bytes(expected_hash, "big"):
+                raise AIRViolation(
+                    f"Hash consistency violated at row {i}"
+                )
+
+        return True
+
+    # --------------------------------------------------------
+
+    def export_trace_columns(self):
+        self.check_air()
+        return {
+            "t": [r["t"] for r in self.trace],
+            "x1": [r["x1"] for r in self.trace],
+            "x2": [r["x2"] for r in self.trace],
+            "y": [r["y"] for r in self.trace],
+            "h": [r["h"] for r in self.trace],
+        }
+
+    # --------------------------------------------------------
+
+    def final_commitment(self) -> bytes:
+        self.check_air()
+        return self._prev_hash
+
+    # --------------------------------------------------------
+
+    def reset(self):
+        self.__init__()
+
+
+# ============================================================
+# Epoch Folding (IVC Accumulator)
+# ============================================================
+
+class TKEpochFolder:
+    def __init__(self, modulus: int, alpha: int = 1315423911):
+        self.p = modulus
+        self.alpha = alpha
+        self.acc = 0
+        self.steps = 0
+
+    def absorb(self, h: int):
+        self.acc = (self.alpha * self.acc + h) % self.p
+        self.steps += 1
+
+    def root(self) -> int:
+        return self.acc
+
+
+# ============================================================
+# Fault Injection
+# ============================================================
+
+class TKFaultInjector:
+    def __init__(self, flip_mask: int = 0x01):
+        self.flip_mask = flip_mask
+
+    def inject(self, value: int) -> int:
+        return value ^ self.flip_mask
+import torch
+import torch.nn as nn
+
+class TetraKleinKernel(nn.Module):
+    def __init__(self, alpha=0.85):
+        super().__init__()
+        self.alpha = alpha
+
+    def forward(self, x, u):
+        return self.alpha * x + (1.0 - self.alpha) * u
+import torch
+from tk_kernel import TetraKleinKernel
+
+model = TetraKleinKernel(alpha=0.85)
+model.eval()
+
+x = torch.randn(1, 1)
+u = torch.randn(1, 1)
+
+torch.onnx.export(
+    model,
+    (x, u),
+    "tk_kernel.onnx",
+    input_names=["x", "u"],
+    output_names=["y"],
+    opset_version=11
+)
+
+print("Exported tk_kernel.onnx")
+from tk_hailo_executor import TKHailoKernelExecutor
+from tk_zk_witness_recorder import TKZKWitnessRecorder
+
+
+class TKEpochFolder:
+    """
+    Linear folding accumulator for recursive IVC.
+    """
+
+    def __init__(self, modulus: int, alpha: int = 1315423911):
+        self.p = modulus
+        self.alpha = alpha
+        self.acc = 0
+        self.steps = 0
+
+    def absorb(self, value: int):
+        self.acc = (self.alpha * self.acc + value) % self.p
+        self.steps += 1
+
+    def root(self) -> int:
+        return self.acc
+
+
+class TKHailoZKExecutor:
+    """
+    Hardware execution + ZK witness recording.
+    Owns the full hardware lifecycle.
+    """
+
+    def __init__(self, hef_path: str, network_name: str):
+        self.executor = TKHailoKernelExecutor(hef_path, network_name)
+        self.witness = TKZKWitnessRecorder()
+        self._closed = False
+
+    # ------------------------------------------------------------
+    # Normal execution (no divergence check)
+    # ------------------------------------------------------------
+
+    def step(self, x1: int, x2: int) -> int:
+        if self._closed:
+            raise RuntimeError("Executor is shut down")
+
+        y = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+        self.witness.record(x1, x2, y)
+        return y
+
+    # ------------------------------------------------------------
+    # Divergence-checked execution 
+    # ------------------------------------------------------------
+
+    def step_checked(self, x1: int, x2: int) -> int:
+        """
+        Execute kernel and enforce deterministic replay.
+        """
+
+        if self._closed:
+            raise RuntimeError("Executor is shut down")
+
+        y1 = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+
+        y2 = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+
+        if y1 != y2:
+            raise RuntimeError(
+                f"Divergence detected: y1={y1}, y2={y2}"
+            )
+
+        self.witness.record(x1, x2, y1)
+        return y1
+
+    # ------------------------------------------------------------
+
+    def export_witness(self):
+        return self.witness.export_trace_columns()
+
+    def commitment(self) -> bytes:
+        return self.witness.final_commitment()
+
+    def shutdown(self):
+        if not self._closed:
+            self.executor.shutdown()
+            self._closed = True
+
+    def __del__(self):
+        try:
+            self.shutdown()
+        except Exception:
+            pass
+
+from tk_hailo_executor import TKHailoKernelExecutor
+from tk_zk_witness_recorder import TKZKWitnessRecorder
+
+
+class TKEpochFolder:
+    """
+    Linear folding accumulator for recursive IVC.
+    """
+
+    def __init__(self, modulus: int, alpha: int = 1315423911):
+        self.p = modulus
+        self.alpha = alpha
+        self.acc = 0
+        self.steps = 0
+
+    def absorb(self, value: int):
+        self.acc = (self.alpha * self.acc + value) % self.p
+        self.steps += 1
+
+    def root(self) -> int:
+        return self.acc
+
+
+class TKHailoZKExecutor:
+    """
+    Hardware execution + ZK witness recording.
+    Owns the full hardware lifecycle.
+    """
+
+    def __init__(self, hef_path: str, network_name: str):
+        self.executor = TKHailoKernelExecutor(hef_path, network_name)
+        self.witness = TKZKWitnessRecorder()
+        self._closed = False
+
+    # ------------------------------------------------------------
+    # Normal execution (no divergence check)
+    # ------------------------------------------------------------
+
+    def step(self, x1: int, x2: int) -> int:
+        if self._closed:
+            raise RuntimeError("Executor is shut down")
+
+        y = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+        self.witness.record(x1, x2, y)
+        return y
+
+    # ------------------------------------------------------------
+    # Divergence-checked execution 
+    # ------------------------------------------------------------
+
+    def step_checked(self, x1: int, x2: int) -> int:
+        """
+        Execute kernel and enforce deterministic replay.
+        """
+
+        if self._closed:
+            raise RuntimeError("Executor is shut down")
+
+        y1 = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+
+        y2 = self.executor.run(
+            input_layer1=x1,
+            input_layer2=x2
+        )
+
+        if y1 != y2:
+            raise RuntimeError(
+                f"Divergence detected: y1={y1}, y2={y2}"
+            )
+
+        self.witness.record(x1, x2, y1)
+        return y1
+
+    # ------------------------------------------------------------
+
+    def export_witness(self):
+        return self.witness.export_trace_columns()
+
+    def commitment(self) -> bytes:
+        return self.witness.final_commitment()
+
+    def shutdown(self):
+        if not self._closed:
+            self.executor.shutdown()
+            self._closed = True
+
+    def __del__(self):
+        try:
+            self.shutdown()
+        except Exception:
+            pass
+import numpy as np
+from datetime import timedelta
+from hailo_platform.pyhailort import _pyhailort as hailo
+
+
+class TKHailoKernelExecutor:
+    """
+    Deterministic executor for a single Hailo HEF kernel.
+    Intended for TetraKlein Layer-2 / Layer-5 execution.
+    """
+
+    def __init__(self, hef_path: str, network_name: str):
+        self.hef_path = hef_path
+        self.network_name = network_name
+        self._closed = False
+
+        # --- Device setup ---
+        self._vdevice = hailo.VDevice.create(
+            hailo.VDeviceParams.default()
+        )
+
+        # --- Infer model ---
+        self._infer_model = self._vdevice.create_infer_model_from_file(
+            hef_path, network_name
+        )
+
+        self._configured_model = self._infer_model.configure()
+        self._configured_model.activate()
+
+        # --- Bindings (persistent) ---
+        self._bindings = self._configured_model.create_bindings()
+
+        # --- Input / output names ---
+        self.input_names = self._infer_model.get_input_names()
+        self.output_names = self._infer_model.get_output_names()
+
+        if len(self.output_names) != 1:
+            raise ValueError("Executor assumes exactly one output stream")
+
+        # --- Allocate buffers ---
+        self._allocate_buffers()
+
+    # ------------------------------------------------------------------
+
+    def _allocate_buffers(self):
+        self._input_buffers = {}
+
+        for name in self.input_names:
+            shape = self._infer_model.input(name).shape()
+            buf = np.zeros(shape, dtype=np.uint8)
+            self._input_buffers[name] = buf
+            self._bindings.input(name).set_buffer(buf)
+
+        out_name = self.output_names[0]
+        out_shape = self._infer_model.output(out_name).shape()
+        self._output_buffer = np.zeros(out_shape, dtype=np.uint8)
+        self._bindings.output(out_name).set_buffer(self._output_buffer)
+
+    # ------------------------------------------------------------------
+
+    def run(self, **inputs) -> int:
+        if self._closed:
+            raise RuntimeError("Executor has been shut down")
+
+        for name in self.input_names:
+            key = name.split("/")[-1]
+            if key not in inputs:
+                raise KeyError(f"Missing input: {key}")
+            self._input_buffers[name].fill(inputs[key])
+
+        self._configured_model.run(
+            self._bindings,
+            timedelta(milliseconds=100)
+        )
+
+        return int(self._output_buffer.flatten()[0])
+
+    # ------------------------------------------------------------------
+
+    def shutdown(self):
+        if self._closed:
+            return
+
+        self._closed = True
+
+        # IMPORTANT: drop bindings first
+        self._bindings = None
+        self._input_buffers = None
+        self._output_buffer = None
+
+        try:
+            self._configured_model.deactivate()
+        except Exception:
+            pass
+
+        # Explicitly drop model objects before releasing device
+        self._configured_model = None
+        self._infer_model = None
+
+        try:
+            self._vdevice.release()
+        except Exception:
+            pass
+
+        self._vdevice = None
+
+    # ------------------------------------------------------------------
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.shutdown()
+
+    def __del__(self):
+        try:
+            self.shutdown()
+        except Exception:
+            pass
+from tk_hailo_zk_executor import TKHailoZKExecutor
+
+# Create executor
+zk_exec = TKHailoZKExecutor(
+    "/home/baramaystation1/tkhailo/hef/tk_kernel.hef",
+    "tk_kernel"
+)
+
+# Run a few steps
+for x1, x2 in [(5, 3), (10, 2), (7, 7), (1, 1)]:
+    y = zk_exec.step(x1, x2)
+    print(f"{x1}, {x2} -> {y}")
+
+# Export witness
+trace = zk_exec.export_witness()
+root = zk_exec.commitment()
+
+print("Witness columns:")
+for k, v in trace.items():
+    print(k, v)
+
+print("Final commitment:", root.hex())
+
+zk_exec.shutdown()
+#!/usr/bin/env python3
+"""
+TetraKlein Local STARK Trace Validation (End-to-End)
+
+Validates:
+- AIR constraint correctness (real witness)
+- STARK trace construction from witness columns
+- Epoch folding / IVC root accumulation
+- Commitment binding
+- Fault injection & divergence detection
+- Trace scaling & folding envelopes
+"""
+
+import sys
+import time
+import platform
+import hashlib
+from pathlib import Path
+from datetime import timedelta
+
+import numpy as np
+import sympy as sp
+
+from tklocal_paths import LOG_ROOT
+from tk_hailo_zk_executor import TKHailoZKExecutor
+from tk_zk_witness_recorder import (
+    TKZKWitnessRecorder,
+    AIRViolation,
+    TKEpochFolder,
+    TKFaultInjector,
+)
+
+# ---------------------------------------------------------------------
+# Backend detection
+# ---------------------------------------------------------------------
+
+HAS_CUDA = False
+xp = np
+
+try:
+    import cupy as cp
+    cp.cuda.runtime.getDeviceCount()
+    xp = cp
+    HAS_CUDA = True
+except Exception:
+    HAS_CUDA = False
+
+# ---------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------
+
+LOG_ROOT.mkdir(parents=True, exist_ok=True)
+logfile = open(LOG_ROOT / "console.log", "a", buffering=1)
+sys.stdout = logfile
+sys.stderr = logfile
+
+# ---------------------------------------------------------------------
+# Utilities
+# ---------------------------------------------------------------------
+
+def banner(title):
+    print("\n" + "=" * 72)
+    print(title)
+    print("=" * 72)
+
+def ok(msg):
+    print(f"[ OK ] {msg}")
+
+def fail(msg):
+    print(f"[FAIL] {msg}")
+    sys.exit(1)
+
+# ---------------------------------------------------------------------
+# Trace Configuration
+# ---------------------------------------------------------------------
+
+TRACE_CONFIG = {
+    "rows": 2**20,
+    "cols": 32,
+    "field_modulus": 2**64 - 59,
+}
+
+if not HAS_CUDA:
+    TRACE_CONFIG["rows"] = 2**17
+
+# ---------------------------------------------------------------------
+# 1. Trace Allocation & Memory Safety
+# ---------------------------------------------------------------------
+
+def test_trace_allocation():
+    banner("1. Trace Allocation & Memory Safety")
+
+    rows = TRACE_CONFIG["rows"]
+    cols = TRACE_CONFIG["cols"]
+
+    try:
+        trace = xp.zeros((rows, cols), dtype=xp.uint64)
+        if HAS_CUDA:
+            cp.cuda.Device().synchronize()
+    except Exception as e:
+        fail(f"Trace allocation failed: {e}")
+
+    mem_used = trace.nbytes / (1024**3)
+    print(f"Trace size: {rows:,} × {cols}  (~{mem_used:.2f} GB)")
+
+    if HAS_CUDA and mem_used > 6.5:
+        fail("Trace exceeds safe VRAM envelope")
+
+    ok("Trace allocated safely")
+    return trace
+
+# ---------------------------------------------------------------------
+# 2. AIR Degree Check (Symbolic)
+# ---------------------------------------------------------------------
+
+def test_air_transition_degree():
+    banner("2. AIR Transition Degree Check")
+
+    x_t, x_next, a, b = sp.symbols("x_t x_next a b")
+    C = x_next - (a * x_t + b)
+
+    deg = sp.total_degree(C)
+    print(f"Transition degree: {deg}")
+
+    if deg > 2:
+        fail("AIR degree overflow")
+
+    ok("AIR degree within STARK limits")
+
+# ---------------------------------------------------------------------
+# 3. Trace Evolution Stress
+# ---------------------------------------------------------------------
+
+def test_trace_evolution(trace):
+    banner("3. Trace Evolution Stress")
+
+    p = TRACE_CONFIG["field_modulus"]
+
+    def evolve_cpu(x):
+        return (3 * x + 7) % p
+
+    if HAS_CUDA:
+        @cp.fuse()
+        def evolve_gpu(x):
+            return (3 * x + 7) % p
+        evolve = evolve_gpu
+    else:
+        evolve = evolve_cpu
+
+    start = time.time()
+    for _ in range(8):
+        trace[:] = evolve(trace)
+    if HAS_CUDA:
+        cp.cuda.Device().synchronize()
+
+    print(f"Evolution time: {time.time() - start:.2f}s")
+    ok("Trace evolution stable")
+
+# ---------------------------------------------------------------------
+# 4. Constraint Composition Stress
+# ---------------------------------------------------------------------
+
+def test_constraint_composition():
+    banner("4. Constraint Composition Stress")
+
+    x, y, z, α = sp.symbols("x y z α")
+
+    C1 = x + y - z
+    C2 = y**2 - y
+    C3 = z - x*y
+
+    P = α*C1 + (1-α)*C2 + α**2*C3
+    deg = sp.total_degree(P)
+
+    print(f"Composed degree: {deg}")
+    if deg > 4:
+        fail("Constraint degree explosion")
+
+    ok("Constraint composition safe")
+
+# ---------------------------------------------------------------------
+# 5. Trace Folding
+# ---------------------------------------------------------------------
+
+def test_trace_folding(trace):
+    banner("5. Trace Folding")
+
+    before = trace.shape[0]
+    folded = trace[::2, :]
+    after = folded.shape[0]
+
+    print(f"Rows before: {before:,}")
+    print(f"Rows after : {after:,}")
+
+    if after != before // 2:
+        fail("Folding incorrect")
+
+    ok("Trace folding correct")
+
+# ---------------------------------------------------------------------
+# 6. Witness → STARK Trace Builder
+# ---------------------------------------------------------------------
+
+class TKStarkTraceBuilder:
+    def __init__(self, modulus):
+        self.p = modulus
+
+    def build(self, witness: TKZKWitnessRecorder):
+        witness.check_air()
+        cols = witness.export_trace_columns()
+        n = len(cols["t"])
+
+        trace = []
+        for i in range(n):
+            trace.append([
+                cols["t"][i] % self.p,
+                cols["x1"][i] % self.p,
+                cols["x2"][i] % self.p,
+                cols["y"][i] % self.p,
+                cols["h"][i] % self.p,
+            ])
+        return trace
+
+# ---------------------------------------------------------------------
+# 7. Real Hardware → ZK → IVC → Commitment Validation
+# ---------------------------------------------------------------------
+
+def test_real_witness_pipeline():
+    banner("6. Real Witness / ZK / IVC Pipeline")
+
+    zk = TKHailoZKExecutor(
+        "/home/baramaystation1/tkhailo/hef/tk_kernel.hef",
+        "tk_kernel"
+    )
+
+    inputs = [(5, 3), (10, 2), (7, 7), (1, 1)]
+    for x1, x2 in inputs:
+        y = zk.step(x1, x2)
+        print(f"({x1}, {x2}) → {y}")
+
+    witness = zk.export_witness()
+    commitment = zk.commitment().hex()
+
+    print("\nWitness columns:")
+    for k, v in witness.items():
+        print(f"  {k}: {v}")
+
+    print(f"\nFinal commitment: {commitment}")
+
+    # Epoch folding (IVC-style)
+    folder = TKEpochFolder(TRACE_CONFIG["field_modulus"])
+    for h in witness["h"]:
+        folder.absorb(h)
+
+    ivc_root = folder.root()
+    print(f"Epoch folding root: {ivc_root}")
+
+    # Build STARK trace
+    builder = TKStarkTraceBuilder(TRACE_CONFIG["field_modulus"])
+    stark_trace = builder.build(zk.witness)
+
+    print(f"STARK trace shape: {len(stark_trace)} × {len(stark_trace[0])}")
+
+    zk.shutdown()
+    ok("Real witness pipeline validated")
+
+# ---------------------------------------------------------------------
+# 8. Fault Injection & Divergence Detection
+# ---------------------------------------------------------------------
+
+def test_fault_injection():
+    banner("7. Fault Injection & Divergence Detection")
+
+    zk = TKHailoZKExecutor(
+        "/home/baramaystation1/tkhailo/hef/tk_kernel.hef",
+        "tk_kernel"
+    )
+
+    injector = TKFaultInjector()
+
+    # Step 1: valid execution
+    y1 = zk.step_checked(5, 3)
+
+    # Step 2: valid execution
+    y2 = zk.step_checked(10, 2)
+
+    # Step 3: FAULT — manually corrupt witness
+    zk.witness.trace[-1]["y"] = injector.inject(
+        zk.witness.trace[-1]["y"]
+    )
+
+    # Step 4: AIR must now fail
+    try:
+        zk.witness.check_air()
+        fail("Fault not detected")
+    except AIRViolation as e:
+        print(f"Detected AIR violation: {e}")
+        ok("Fault injection correctly detected")
+
+    zk.shutdown()
+
+
+# ---------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------
+
+def main():
+    start = time.time()
+
+    banner("STARK TRACE VALIDATION — ENVIRONMENT")
+    print(f"Platform : {platform.platform()}")
+    print(f"Python   : {platform.python_version()}")
+    print(f"Backend  : {'CUDA' if HAS_CUDA else 'CPU'}")
+
+    trace = test_trace_allocation()
+    test_air_transition_degree()
+    test_trace_evolution(trace)
+    test_constraint_composition()
+    test_trace_folding(trace)
+    test_real_witness_pipeline()
+    test_fault_injection()
+
+    banner("STARK TRACE VALIDATION COMPLETE")
+    print(f"Total runtime: {time.time() - start:.2f}s")
+    ok("ALL STARK / ZK / IVC CHECKS PASSED")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,100 @@
+
+========================================================================
+TETRAKLEIN ZERO-KNOWLEDGE WITNESS VALIDATION SUITE
+========================================================================
+HEF: /home/baramaystation1/TetraKlein/examples/tetraklein-local/tests/hef/tk_kernel.hef
+Network: tk_kernel
+Test vectors: 8
+
+========================================================================
+TEST 1: Basic NPU Execution + Witness Recording
+========================================================================
+  (  5,   3) ->   5
+  ( 10,   2) ->  11
+  (  7,   7) ->   8
+  (  1,   1) ->   1
+  ( 42,  17) ->  45
+  (255, 255) -> 255
+  (  0,   0) ->   0
+  (128,  64) -> 137
+
+Witness recorded: 8 steps
+Commitment: 09b70384c17ba43e33d3a8608e0037177a5b083036b656c3f4e42b5ae8d16a09
+[ OK ] Basic execution and witness recording
+
+========================================================================
+TEST 2: AIR Constraint Validation
+========================================================================
+[ OK ] All AIR constraints satisfied
+[ OK ] Time monotonicity (C1)
+[ OK ] Range bounds (C2)
+[ OK ] Hash chain consistency (C3 - batch mode)
+
+========================================================================
+TEST 3: Deterministic Replay
+========================================================================
+[ OK ] Commitment determinism
+[ OK ] Trace determinism
+Commitment (both runs): 09b70384c17ba43e33d3a8608e0037177a5b083036b656c3f4e42b5ae8d16a09
+
+========================================================================
+TEST 4: Checked Execution (Divergence Detection)
+========================================================================
+  (5, 3) -> 5 [verified]
+  (10, 2) -> 11 [verified]
+  (7, 7) -> 8 [verified]
+  (1, 1) -> 1 [verified]
+[ OK ] Double-run execution produces identical outputs
+
+========================================================================
+TEST 5: Fault Injection Detection
+========================================================================
+Injecting fault: y=8 -> 9
+  Detected: Commitment changed after fault
+[ OK ] Fault injection correctly detected (via commitment)
+
+========================================================================
+TEST 6: IVC Epoch Folding
+========================================================================
+IVC steps: 8
+IVC root: 11814119492815641622
+[ OK ] IVC epoch folding
+
+========================================================================
+TEST 7: Range Boundary Testing
+========================================================================
+  (  0,   0) ->   0
+  (255, 255) -> 255
+  (  0, 255) ->   0
+  (255,   0) -> 255
+  (  1, 254) ->   1
+[ OK ] All outputs within uint8 range
+
+========================================================================
+TEST 8: STARK Trace Construction
+========================================================================
+STARK trace shape: 8 x 5
+Field modulus: 18446744073709551557
+[ OK ] STARK trace construction valid
+
+========================================================================
+TEST 9: Commitment Binding
+========================================================================
+Commitment 1: 7a1bfa51f42a088da3122eb5e358c63f0c9041e96e9699ee847fb11935ae07b2
+Commitment 2: 6b77a8131390c5f782339df89a89802860473c4a31230f5929b00fface451f24
+[ OK ] Commitment binding (different inputs -> different commitments)
+
+========================================================================
+TEST 10: Performance Characterization
+========================================================================
+Operations: 1000
+Elapsed: 0.159s
+Throughput: 6282.4 ops/sec
+Latency: 0.159 ms/op
+[ OK ] Performance characterization
+
+========================================================================
+ALL ZK VALIDATION TESTS PASSED
+========================================================================
+Total runtime: 1.20s
+[ OK ] Complete ZK witness validation suite

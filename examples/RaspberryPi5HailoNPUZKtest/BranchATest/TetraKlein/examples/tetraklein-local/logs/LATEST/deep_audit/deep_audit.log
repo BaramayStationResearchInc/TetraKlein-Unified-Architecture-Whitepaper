@@ -1,0 +1,31 @@
+2026-01-01 16:54:08,506 | ========================================================================
+2026-01-01 16:54:08,507 | TETRAKLEIN DEEP FEASIBILITY AUDIT — RASPBERRY PI 5
+2026-01-01 16:54:08,507 | ========================================================================
+2026-01-01 16:54:08,507 | === Deep Feasibility Audit START ===
+2026-01-01 16:54:08,507 | === Goal 1: Contractivity & Convergence ===
+2026-01-01 16:54:08,540 | Limit(error_t) = Piecewise((sigma/(1 - rho), rho < 1), (oo, True))
+2026-01-01 16:54:08,541 | goal1_contractivity: time=0.034s, cpu=0.030s, mem=2.00MB
+2026-01-01 16:54:08,541 | === Goal 2: Hypercube Spectral Gap ===
+2026-01-01 16:54:08,541 | N=1, spectral_gap=2, normalized_gap=2.0000
+2026-01-01 16:54:08,541 | N=2, spectral_gap=2, normalized_gap=1.0000
+2026-01-01 16:54:08,541 | N=3, spectral_gap=2, normalized_gap=0.6667
+2026-01-01 16:54:08,541 | N=4, spectral_gap=2, normalized_gap=0.5000
+2026-01-01 16:54:08,541 | N=5, spectral_gap=2, normalized_gap=0.4000
+2026-01-01 16:54:08,541 | N=6, spectral_gap=2, normalized_gap=0.3333
+2026-01-01 16:54:08,541 | N=7, spectral_gap=2, normalized_gap=0.2857
+2026-01-01 16:54:08,541 | N=8, spectral_gap=2, normalized_gap=0.2500
+2026-01-01 16:54:08,686 | goal2_hypercube_spectrum: time=0.145s, cpu=0.150s, mem=3.88MB
+2026-01-01 16:54:08,686 | === Goal 3: Quantum-Thermodynamic Proxy ===
+2026-01-01 16:54:08,686 | QuTiP not available — skipping quantum proxy
+2026-01-01 16:54:08,686 | goal3_quantum_proxy: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:08,686 | === Goal 4: AIR / IVC Degree Safety ===
+2026-01-01 16:54:08,693 | AIR degree = 2
+2026-01-01 16:54:08,693 | goal4_air_ivc: time=0.007s, cpu=0.010s, mem=0.03MB
+2026-01-01 16:54:08,693 | === Goal 5: Post-Quantum Security Sanity ===
+2026-01-01 16:54:08,693 | BKZ cost ≈ 2^224.3
+2026-01-01 16:54:08,693 | Extractor distance ≤ 2^-384
+2026-01-01 16:54:08,693 | goal5_post_quantum: time=0.000s, cpu=0.000s, mem=0.00MB
+2026-01-01 16:54:08,693 | === Goal 6: XR / Physics Constraints ===
+2026-01-01 16:54:08,704 | XR physics constraints closed under AIR bounds
+2026-01-01 16:54:08,704 | goal6_xr_constraints: time=0.011s, cpu=0.010s, mem=0.03MB
+2026-01-01 16:54:08,704 | === Deep Feasibility Audit COMPLETE ===

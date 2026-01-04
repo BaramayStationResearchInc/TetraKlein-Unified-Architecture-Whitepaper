@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-04T03:40:49.629554+00:00",
+  "system": "Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.36",
+  "machine": "aarch64",
+  "python": "3.11.2",
+  "cuda": {
+    "available": false,
+    "error": "ModuleNotFoundError: No module named 'cupy'"
+  },
+  "hailo": {
+    "available": false,
+    "error": "ModuleNotFoundError: No module named 'hailo_platform'"
+  }
+}
